@@ -1,4 +1,8 @@
-Linux内核使用C和汇编语言实现
+Linux体系架构
+内核网络、存储、文件系统、内存、调度器，Cgroup等模块
+
+Linux内核开发
+编程语言：C和汇编语言
 > man epoll_create 名称查系统函数的介绍
 > man malloc 在内存中分配内存空间，返回指针
 
