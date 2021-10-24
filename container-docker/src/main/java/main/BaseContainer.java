@@ -1,5 +1,6 @@
 package main;
 
+// TODO: 区别应用部署在真实机器还是在Docker上
 public class BaseContainer {
 
     // 容器的基本认识：
