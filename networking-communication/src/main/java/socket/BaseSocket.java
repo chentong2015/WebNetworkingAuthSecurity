@@ -5,6 +5,10 @@ import java.net.Socket;
 
 // TODO: Socket本质上是底层TCP连接暴露到上层的接口(实现)
 // 由于上层是无法直接调用OS级别的核心方法(TCP的连接..)，于是暴露给上层(应用程序)进行调用
+
+// Socket连接:
+// 1. 双向连接，在client端和server端都有的end-point
+// 2. Socket缓冲
 public class BaseSocket {
 
     // Socket.createImpl()
