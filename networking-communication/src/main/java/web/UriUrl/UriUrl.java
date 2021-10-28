@@ -1,4 +1,4 @@
-package networking.UriUrl;
+package web.UriUrl;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -26,7 +26,7 @@ import java.net.URL;
 //   实际例子：ftp://www.ftp.org/docs/text.txt
 //           mailto:user@essai.com
 //   组成部分:
-//   2.1 Protocol: Http, FTP, Telnet
+//   2.1 Protocol: Http_Https, FTP, Telnet
 //   2.2 Hostname: 主机名(DNS域名解析的名称) & IP Address of server
 //   2.3 Port: 服务器要接受的端口号 (默认端口8080可以显式写出来)
 //   2.4 Path-and-file-name: 名称和资源的路径(server上的相对路径)
