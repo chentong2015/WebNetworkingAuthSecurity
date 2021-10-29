@@ -13,14 +13,14 @@ public class BaseSocket {
 
     // Socket.createImpl()
     //    AbstractPlainSocketImpl.socketCreate()
-    //          class PlainSocketImpl
-    //          static native int socket0(boolean stream) throws IOException;
-    //          最终会调用到本地方法，OpenJdk中实现的底层方法
+    //       class PlainSocketImpl
+    //       static native int socket0(boolean stream) throws IOException;
+    //       最终会调用到本地方法，OpenJdk中实现的底层方法
     //
     // jdk8u-jdk-master\jdk8u-jdk-master\src\windows\native\java\net
     //    DualStackPlainSocketImpl.c
     //    net_util_md.c
-    //       int NET_Socket (int domain, int type, int protocol) {
+    //       int NET_Socket(int domain, int type 协议的类型, int protocol) {
     //          SOCKET sock;
     //          该方法调用OS底层暴露出来的接口
     //          sock = socket(domain, type, protocol);

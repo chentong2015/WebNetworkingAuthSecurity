@@ -1,12 +1,12 @@
-TODO: Linux底层对TCP建立连接和关闭连接的具体实现
-以下实现的底层并不能被上层应用直接调用，而是通过调用暴露出来的上层接口，比如Socket
+Socket --- OS上面的接口
+以下实现的底层并不能被上层应用直接调用，而是通过调用暴露出来的上层接口
 
-linux > net > ipv4 > tcp_input.c tcp_output.c
-第一阶段: 客户端发送SYN给服务端
-int tcp_connect(struct sock *sk 数据)
+linux > net > ipv4 > tcp_input.c tcp_output.c 底层源码的接口
+  第一阶段: 客户端发送SYN给服务端
+  int tcp_connect(struct sock *sk 数据)
 
-第二阶段: 服务端返回ACK给客户端
-int tcp_send_synack(struct sock *sk)
+  第二阶段: 服务端返回ACK给客户端
+  int tcp_send_synack(struct sock *sk)
 
-第三阶段: 客户端发送ACK给服务端
-void __tcp_send_ack(struct sock *sk, u32 rcv_nxt)
+  第三阶段: 客户端发送ACK给服务端
+  void __tcp_send_ack(struct sock *sk, u32 rcv_nxt)
