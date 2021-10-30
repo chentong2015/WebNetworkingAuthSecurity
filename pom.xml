@@ -9,10 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>system-linux</module>
-        <module>networking-communication</module>
-        <module>container-docker</module>
         <module>cyber-security</module>
+        <module>networking-communication</module>
+        <module>system-linux</module>
     </modules>
 
     <properties>
