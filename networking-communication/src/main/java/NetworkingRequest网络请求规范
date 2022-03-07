@@ -1,0 +1,10 @@
+Client / Server 模型，Request请求需要考虑的问题
+1. 建立的连接, TCP or UDP ?
+2. 发送的请求timeout(连接超时)如何处理 ?
+3. 连接失败是否有retry自动重新连接的请求 ?
+4. 请求的header(token身份验证)和body如何设置 ?
+
+4. Server端决定请求的complete, 如何决定 ?
+5. 是否会造成阻塞, 异步等待或者callback回调 ?
+6. 大量数据是否需要缓冲 ?
+7. log日志相关的问题 ?
