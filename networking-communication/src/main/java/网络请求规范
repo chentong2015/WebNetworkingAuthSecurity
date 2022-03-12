@@ -10,23 +10,22 @@ Client / Server 模型，Request请求需要考虑的问题
 7. log日志相关的问题 ?
 
 
-消息事件的订阅和发布 ? -----------------------------
+消息事件的订阅和发布(或广播) ? -----------------------------
 0. Redis List News Feed 信息流
 1. Message Queue(RabbitMQ) 带有消息订阅和发布
 2. Spring WebFlux(SSE) 具有事件推送机制
+3. Netty Reactor 响应式模型，接收请求，然后广播
 
-客户端异步获取消息更新的技术 ? -----------------------
+客户端<异步>获取消息更新的技术 ? ----------------------------
 Allow a client to receive messages about asynchronous updates from a server
 1. Client Pull:
     A client periodically requests a server for updates 客户端周期性地向Server端请求更新
-    1.1 Short polling: 发送请求，获取response之后，进行关闭
+    1.1 Short polling: 发送请求，server端返回指定的response之后，确定关闭
     1.2 Long polling: 发送请求，在等到更新之前，不关闭连接。如果在timeout时间内没有更新，发送特殊的Response
 2. Server Push:
     A server proactively sends messages to clients immediately after they are available
     Server端主动在消息可用的时候，立即发送给client端
-
-
-
-相关技术
-1. Netty Reactor 响应式模型，接收请求，然后广播
-2. 通过Message Queue第三方中间件来实现消息的推送
+    2.1 Server-Sent Events: send text messages only from a server to clients in browser-based web
+         ==> https://github.com/aliakh/demo-spring-sse
+    2.2 WebSocket: simultaneous, bi-directional, real-time communication in web app
+                   based on a protocol other than HTTP(proxy servers, NATs, firewalls, etc)
