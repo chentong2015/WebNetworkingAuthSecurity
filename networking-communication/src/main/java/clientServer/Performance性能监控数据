@@ -1,0 +1,8 @@
+Server端性能监控数据
+1. committed virtual memory size
+2. total swap space size
+3. free swap space size
+4. total physical memory size
+5. free physical memory size
+6. system CPU load
+7. process CPU load

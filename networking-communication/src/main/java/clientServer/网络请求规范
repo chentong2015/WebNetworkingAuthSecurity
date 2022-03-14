@@ -3,26 +3,27 @@ Client / Server 模型，Request请求需要考虑的问题
 2. 发送的请求timeout(连接超时)如何处理 ? Server端怎么通过heartbeat心跳机制来实现 ?
 3. 连接失败是否有retry自动重新连接的请求 ?  Connection: keep-alive ?
 4. 请求的header(token身份验证)和body如何设置 ? Ability to specify headers ?
+5. Server端决定请求是否completed, 如何决定 ?
+6. 是否会造成阻塞, 异步等待或者callback回调 ?
+7. 大量数据是否需要缓冲 ?
+8. log日志相关的问题 ?
 
-4. Server端决定请求的complete, 如何决定 ?
-5. 是否会造成阻塞, 异步等待或者callback回调 ?
-6. 大量数据是否需要缓冲 ?
-7. log日志相关的问题 ?
 
-
-消息事件的订阅和发布(或广播) ? -----------------------------
+消息事件的订阅和发布(或广播) ? ---------------------------------------------------
 0. Redis List News Feed 信息流
 1. Message Queue(RabbitMQ) 带有消息订阅和发布
 2. Spring WebFlux(SSE) 具有事件推送机制
 3. Netty Reactor 响应式模型，接收请求，然后广播
 
-客户端<异步>获取消息更新的技术 ? ----------------------------
+
+客户端<异步>获取消息更新的技术 ? --------------------------------------------------
 Make large payload exchange between HTTP services more efficient !!
 Allow a client to receive messages about asynchronous updates from a server !!
 1. Client Pull:
     A client periodically requests a server for updates 客户端周期性地向Server端请求更新
     1.1 Short polling: 发送请求，server端返回指定的response之后，确定关闭
     1.2 Long polling: 发送请求，在等到更新之前，不关闭连接。如果在timeout时间内没有更新，发送特殊的Response
+
 2. Server Push:
     A server proactively sends messages to clients immediately after they are available
     Server端主动在消息可用的时候，立即发送给client端
