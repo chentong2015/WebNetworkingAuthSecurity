@@ -1,4 +1,4 @@
-package socket;
+package com.network.base.socket;
 
 import java.io.IOException;
 import java.net.Socket;

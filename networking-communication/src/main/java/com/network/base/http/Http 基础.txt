@@ -1,5 +1,7 @@
 TODO: HTTP is not Stateless protocol无状态的传输协议
 HTTP request/response pairs are independent of each other
+HTTP/2 is that it is not a replacement for all of HTTP
+(The verbs, status codes and most of the headers will remain the same)
 
 TODO: HTTP协议本质上时对传输数据进行规范，方便网络传输过程中的沟通
       HTTP由浏览器产生，负责生成指定的数据(进行包装)
