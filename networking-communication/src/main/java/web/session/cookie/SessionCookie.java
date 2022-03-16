@@ -1,4 +1,4 @@
-package web.SessionCookie;
+package web.session.cookie;
 
 import java.net.CookieManager;
 import java.net.CookieStore;
