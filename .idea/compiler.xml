@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="networking-communication" />
         <module name="cyber-security" />
+        <module name="system-windows" />
         <module name="system-linux" />
       </profile>
     </annotationProcessing>

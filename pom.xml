@@ -12,11 +12,7 @@
         <module>cyber-security</module>
         <module>networking-communication</module>
         <module>system-linux</module>
+        <module>system-windows</module>
     </modules>
-
-    <properties>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
-    </properties>
 
 </project>
