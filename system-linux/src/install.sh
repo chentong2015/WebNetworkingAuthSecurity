@@ -3,7 +3,12 @@
 # Bash shell脚本测试
 # https://leetcode.com/tag/shell/
 
-echo Linux平台shell请求能否判断返回的Status, 能否abort中断
+# 基本的变量赋值操作, 使用$符号表示对变量的引用
+value="test value"
+result=$value
+echo "The result is $result"
+
+echo shell请求能否判断返回的Status来abort中断
 # response=sh(script: "curl -k -X POST -L --user ${USERNAME}:${API_TOKEN} $url",,,)
 
 curl --request GET \
