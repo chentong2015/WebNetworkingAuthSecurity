@@ -9,8 +9,6 @@ n
 >networking-communication/src/main/java/web/url/uri/UriUrl.java,c\b\cb289e41d4f130f44c7f29a7b9b4cd0f1b659979
 {
 Knetworking-communication/src/main/java/com/network/base/http/Http Basic.txt,4\8\48da4afaa34a1544fe9f515676f5a1d30336ea79
-m
-=cyber-security/src/main/java/WebSecurity/MyRequestConfig.http,e\f\ef17c5558998911a53273fe0e35d9d21911f36eb
 s
 Ccyber-security/src/main/java/EncryptDecrypt/BaseEncryptDecrypt.java,a\7\a7568a68ae9ee00f07e71e313b0f825d665d0c2a
 q
@@ -19,8 +17,6 @@ P
  networking-communication/pom.xml,3\e\3e2b22a3638d858995cc57b713c4ed18fc6a992b
 �
 [networking-communication/src/main/java/com/network/base/http/HttpHeaders 头部完整信息,e\a\ea1b8aa86bc27a6d7dd2e7f125bcb76deab05d75
-v
-Fnetworking-communication/src/main/java/clientServer/网络请求规范,8\4\848d30185f273504309d933274d7c987869d152a
 F
 system-windows/pom.xml,3\5\354aaba5e2a1ccb94d7d1efe53433b23d21c1fd1
 7

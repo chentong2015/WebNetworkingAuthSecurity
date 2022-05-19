@@ -8,6 +8,10 @@ Client / Server 模型，Request请求需要考虑的问题
 7. 大量数据是否需要缓冲 ?
 8. log日志相关的问题 ?
 
+REST Resource Naming Guide
+REST Controller 后端控制器中的endpoints该如何定义
+https://restfulapi.net/resource-naming/
+
 
 消息事件的订阅和发布(或广播) ? ---------------------------------------------------
 0. Redis List News Feed 信息流
