@@ -3,8 +3,6 @@ y
 Inetworking-communication/src/main/java/web/url/uri/UrlEncoderDecoder.java,7\1\712e6a1025d79009506a450d7cc8679796325af0
 n
 >networking-communication/src/main/java/web/url/uri/UriUrl.java,c\b\cb289e41d4f130f44c7f29a7b9b4cd0f1b659979
-{
-Knetworking-communication/src/main/java/com/network/base/http/Http Basic.txt,4\8\48da4afaa34a1544fe9f515676f5a1d30336ea79
 s
 Ccyber-security/src/main/java/EncryptDecrypt/BaseEncryptDecrypt.java,a\7\a7568a68ae9ee00f07e71e313b0f825d665d0c2a
 q
@@ -27,3 +25,7 @@ N
 system-windows/src/install.cmd,b\a\baba74b9c19a5d69be31768e8d505cd16a2cafdf
 K
 system-linux/src/install.sh,1\3\13fe597d8a2ce92f40f8653bd7f39eec9c9357ea
+�
+Snetworking-communication/src/main/java/com/network/base/https/HTTP和HTTPS的区别,b\e\be0bbf657bd3b7f95577cc6dc7ad02009b81ec00
+}
+Mnetworking-communication/src/main/java/com/network/base/https/SSL安全协议,2\3\23dd7f2fca976c0bde9df86fc29f232fd7dce360
