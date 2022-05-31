@@ -29,3 +29,5 @@ K
 Snetworking-communication/src/main/java/com/network/base/https/HTTP和HTTPS的区别,b\e\be0bbf657bd3b7f95577cc6dc7ad02009b81ec00
 }
 Mnetworking-communication/src/main/java/com/network/base/https/SSL安全协议,2\3\23dd7f2fca976c0bde9df86fc29f232fd7dce360
+�
+Snetworking-communication/src/main/java/com/network/base/http/Http完整头部信息,0\b\0be7a4c4cad29294f79f38ed96b631618a8cc3cd
