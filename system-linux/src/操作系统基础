@@ -20,3 +20,7 @@ Linux内核开发: C++/C和汇编语言
 
 Uyuni: Linux systems management 系统管理工具
 https://www.uyuni-project.org/uyuni-docs/en/uyuni/index.html
+
+Linux全局查找的命令
+Find all .c or .cpp files on linux
+> find . -name "*.c" -o -name "*.cpp"
