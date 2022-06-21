@@ -13,8 +13,6 @@ F
 system-windows/pom.xml,3\5\354aaba5e2a1ccb94d7d1efe53433b23d21c1fd1
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-a
-1system-linux/src/TCP协议在Linux内核的实现,e\f\ef9585518a7df9e92d18fba69a86e44c4e8b8beb
 U
 %system-windows/src/telnet远程连接,9\e\9eb149aadb0c7a99671e6bca2794aac835cc12e3
 m
@@ -29,5 +27,9 @@ Mnetworking-communication/src/main/java/com/network/base/https/SSL安全协议,
 Snetworking-communication/src/main/java/com/network/base/http/Http完整头部信息,0\b\0be7a4c4cad29294f79f38ed96b631618a8cc3cd
 �
 Pnetworking-communication/src/main/java/com/network/base/http/Http返回状态码,c\6\c63190afccf4b8e171da856e9ce1c7a88d3fd638
+v
+Fnetworking-communication/src/main/java/clientServer/网络请求规范,8\4\848d30185f273504309d933274d7c987869d152a
 {
 Knetworking-communication/src/main/java/com/network/base/http/Http Basic.txt,4\8\48da4afaa34a1544fe9f515676f5a1d30336ea79
+z
+Jnetworking-communication/src/main/java/com/network/base/tcp/BaseTcpIP.java,c\b\cb13b278f22f9a3c96e45681872a55b36492cfb5
