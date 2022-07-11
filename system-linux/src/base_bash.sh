@@ -5,6 +5,12 @@ value="test value"
 result=$value
 echo "The result is $result"
 
+# 按照指定的字符分割，提取最后段的字符串
+class_name=`echo $result | awk -F"/" '{print $NF}' | awk -F "." '{print $1}'`
+
+# 找到指定的目录下java文件的数量
+find ./test01/ -type f -name *.java | wc -l
+
 # bash网络请求操作
 curl --request GET \
   --url 'http://www.ctong.com/v1/testing/example' \
