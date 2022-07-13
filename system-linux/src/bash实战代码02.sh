@@ -17,7 +17,7 @@ do
     echo $result >> $logger_file
     while IFS= read -r line; do
 	  if [[ "$line" == *"<class "* || "$line" == *"<subclass "* ]]; then
-	      # https://www.shellunix.com/awk.html awk参考文档
+	      # awk参考文档 https://www.shellunix.com/awk.html
 	      # 截取指定区间内的字符串
 	      class_name=`echo $line | awk -F"name=\"" '{print $2}' | awk -F "\"" '{print $1}'`
 
@@ -27,6 +27,11 @@ do
         # 只需要匹配第一个空格结束的位置
 		    entity_tag="entity-name=\"$class_name\" "
 		    sed -i "s/<class.*name=\"$class_name\" /&$entity_tag/g" $result
+
+		    # sed只匹配文件中第一次出现的行，之后跳出while循环
+		    # 只有第一次出现的@Entity会被替换(一个Java Entity Class类型中只有一个此注解)
+        sed -i "0,/@Entity/{s/@Entity/& add something.../}" $result
+        break
 	  fi
 
 	  # 这里的文件路径不能包含空格，否则会报错
