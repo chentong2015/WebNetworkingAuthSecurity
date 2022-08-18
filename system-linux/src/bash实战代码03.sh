@@ -33,8 +33,11 @@ while read result
 do
     while IFS= read -r line; do
         if [[ $line =~ entity-name=.*entity-name= ]]; then
-           echo "Find in line"
+           echo "Find entity-name twice"
 		       echo $line
+        fi
+        if [[ $line =~ entity-name=\".*\"\" ]]; then
+           echo "Find entity-name error"
         fi
     done < $result
 done
