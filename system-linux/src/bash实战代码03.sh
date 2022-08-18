@@ -27,3 +27,14 @@ echo "input line: $line"
 # 传递字符串变量
 get_class_name "${line}"
 echo $class_name
+
+# if 条件判断regular expression正则条件
+while read result
+do
+    while IFS= read -r line; do
+        if [[ $line =~ entity-name=.*entity-name= ]]; then
+           echo "Find in line"
+		       echo $line
+        fi
+    done < $result
+done
