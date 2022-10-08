@@ -18,7 +18,6 @@ Linux内核开发: C++/C和汇编语言
 > free –m 命令查看内存的使用情况
 > iostat可以查看磁盘的读写情况
 
----------------------------------------------------------------
 Uyuni: Linux systems management 系统管理工具
 https://www.uyuni-project.org/uyuni-docs/en/uyuni/index.html
 
