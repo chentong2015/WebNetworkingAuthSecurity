@@ -1,0 +1,22 @@
+加密算法总结：
+Hash加密: MD5, SHA-1
+对称加密: AES(128 & 256), DES(已被破解)
+非对称加密: RSA, DH
+
+1. 加密方式(计算逻辑)可以混合使用
+2. 非对称加密中生成一对密钥，公开其中的一部分，私钥一定在自己的手中
+
+三种模型:
+1. 身份认证模型 Authentification
+2. 加密算法模型 Chiffrement
+3. 签名模型    Signature (私钥加密，公钥解)
+
+实现: apache-commons-codec
+Simple encoder and decoders for various formats such as Base64 and Hexadecimal.
+The codec package also maintains a collection of phonetic encoding utilities.
+<dependency>
+    <groupId>commons-codec</groupId>
+    <artifactId>commons-codec</artifactId>
+    <version>1.15</version>
+</dependency>
+
