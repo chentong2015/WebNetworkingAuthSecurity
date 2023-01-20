@@ -1,4 +1,4 @@
-Client / Server 模型，Request请求需要考虑的问题
+Client / Server 模型设计规范:
 1. 建立的连接, TCP or UDP ?
 2. 发送的请求timeout(连接超时)如何处理 ? Server端怎么通过heartbeat心跳机制来实现 ?
 3. 连接失败是否有retry自动重新连接的请求 ?  Connection: keep-alive ?
@@ -7,19 +7,17 @@ Client / Server 模型，Request请求需要考虑的问题
 6. 是否会造成阻塞, 异步等待或者callback回调 ?
 7. 大量数据是否需要缓冲 ?
 8. log日志相关的问题 ?
+9. TODO. 服务端(接受请求)的职责划分问题，区别login和loadData不同方面的请求 !
 
-REST Resource Naming Guide
-REST Controller 后端控制器中的endpoints该如何定义 https://restfulapi.net/resource-naming/
-TODO. SSE技术可以不严格的满足REST Endpoints的设计标准(比如可以支持Get with request body)
 
-消息事件的订阅和发布(或广播) ? -----------------------------------------------------------
+TODO. 消息事件的订阅和发布(或广播) ?
 0. Redis List News Feed 信息流
 1. Message Queue(RabbitMQ) 带有消息订阅和发布
 2. Spring WebFlux(SSE) 具有事件推送机制
 3. Netty Reactor 响应式模型，接收请求，然后广播
 
 
-客户端<异步>获取消息更新的技术 ? ---------------------------------------------------------
+TODO. 客户端<异步>获取消息更新的技术 ?
 Make large payload exchange between HTTP services more efficient !!
 Allow a client to receive messages about asynchronous updates from a server !!
 1. Client Pull:

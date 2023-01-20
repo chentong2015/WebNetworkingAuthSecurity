@@ -1,0 +1,4 @@
+REST Controller endpoints Naming Guide
+https://restfulapi.net/resource-naming/
+
+TODO. SSE技术可以不严格的满足REST Endpoints的设计标准(比如可以支持Get with request body)
