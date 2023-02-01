@@ -25,6 +25,7 @@ do
 		    # 这里必须使用双引号，才能替换变量
         # “&”字符表示前面正则匹配的字符串
         # 只需要匹配第一个空格结束的位置
+        # TODO. 如果变量名称中包含/字符，则需要特殊处理
 		    entity_tag="entity-name=\"$class_name\" "
 		    sed -i "s/<class.*name=\"$class_name\" /&$entity_tag/g" $result
 
