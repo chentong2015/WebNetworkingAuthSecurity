@@ -27,7 +27,8 @@ TODO. 响应状态码
    302 - 临时重定向: 可以用来统计网址被点击的次数，收集用户Cookie, User Agent等信息做大数据分析
    400 - Bad Request 客户端请求有语法错误，不能被服务器所理解
    401 - Unauthorized 请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用
+   403 - Forbidden 服务端禁止访问，不执行授权和重定向，通常是访问的Endpoint整个服务没有启动
    404 - 请求资源不存在，可能是输入了错误的URL
    500 - 服务器内部发生了不可预期的错误
-   503 Server Unavailable - 服务器当前不能处理客户端的请求，一段时间后可能恢复正常
+   503 - Server Unavailable 服务无法访问，可能是被异常关闭，服务器不能处理客户端的请求
 

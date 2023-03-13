@@ -19,8 +19,6 @@ Snetworking-communication/src/main/java/com/network/base/https/HTTP和HTTPS的�
 Mnetworking-communication/src/main/java/com/network/base/https/SSL安全协议,2\3\23dd7f2fca976c0bde9df86fc29f232fd7dce360
 �
 Snetworking-communication/src/main/java/com/network/base/http/Http完整头部信息,0\b\0be7a4c4cad29294f79f38ed96b631618a8cc3cd
-{
-Knetworking-communication/src/main/java/com/network/base/http/Http Basic.txt,4\8\48da4afaa34a1544fe9f515676f5a1d30336ea79
 z
 Jnetworking-communication/src/main/java/com/network/base/tcp/BaseTcpIP.java,c\b\cb13b278f22f9a3c96e45681872a55b36492cfb5
 [
@@ -45,3 +43,13 @@ v
 Fnetworking-communication/src/main/java/clientServer/网络请求规范,8\4\848d30185f273504309d933274d7c987869d152a
 r
 Bnetworking-communication/src/main/java/com/network/base/REST Guide,6\f\6f63c56ad426e808db234f01408667b2627e8201
+^
+.system-linux/src/project/bash实战代码03.sh,1\4\1418f0213780072b5a945f64c29be1179d37fc79
+^
+.system-linux/src/project/bash实战代码02.sh,1\4\14aacadb2d32ae3bb66bf1e19a842067573e431f
+W
+'system-linux/src/example/file_folder.sh,e\4\e4a8489c81d5a51cbcd4fe72c48264bc4e5ebfe4
+^
+.system-linux/src/project/bash实战代码01.sh,7\a\7a46bdf624be43af63fc14920922e0b307eea890
+U
+%system-windows/src/telnet远程连接,9\e\9eb149aadb0c7a99671e6bca2794aac835cc12e3
