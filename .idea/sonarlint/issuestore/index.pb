@@ -35,8 +35,6 @@ y
 Inetworking-communication/src/main/java/clientServer/服务端性能监控,d\c\dc94094103809cf0c9cb36d169ab5baa586054c1
 F
 cyber-security/pom.xml,e\1\e1fcd55f66fc6392fcec758f959155d12a97116b
-k
-;cyber-security/src/main/java/EncryptDecrypt/加密和解密,7\9\799345c17ede08ef5369178f3be1cbdddb508848
 w
 Gnetworking-communication/src/main/java/com/network/base/Call remote URL,c\9\c9033793f9ba0de58309d95783c323b67508431f
 v
@@ -53,3 +51,5 @@ W
 .system-linux/src/project/bash实战代码01.sh,7\a\7a46bdf624be43af63fc14920922e0b307eea890
 U
 %system-windows/src/telnet远程连接,9\e\9eb149aadb0c7a99671e6bca2794aac835cc12e3
+W
+'system-linux/src/example/base_script.sh,1\0\10b8657058b102c7d0ebb66df2b47a681e9f6253
