@@ -53,3 +53,7 @@ U
 %system-windows/src/telnet远程连接,9\e\9eb149aadb0c7a99671e6bca2794aac835cc12e3
 W
 'system-linux/src/example/base_script.sh,1\0\10b8657058b102c7d0ebb66df2b47a681e9f6253
+{
+Knetworking-communication/src/main/java/com/network/base/http/Http Basic.txt,4\8\48da4afaa34a1544fe9f515676f5a1d30336ea79
+k
+;cyber-security/src/main/java/EncryptDecrypt/加密和解密,7\9\799345c17ede08ef5369178f3be1cbdddb508848

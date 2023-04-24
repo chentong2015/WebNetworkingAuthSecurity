@@ -1,0 +1,11 @@
+https://ant.apache.org/
+Apache Ant是一个Java库和命令行工具，主要已知用途是构建Java应用程序
+其任务是将构建文件中描述的进程驱动为相互依赖的目标和扩展点
+
+> ant --help
+> /Linux/2.6/ant/apache-ant-1.9.3/bin/ant --version
+> /Linux/2.6/ant/apache-ant-1.9.3/bin/ant run-test-integration
+
+> export JAVA_HOME=/nfs_tools/Linux/2.6/java/jdk-17.0.2/
+> /Linux/2.6/java/jdk-17.0.2/bin/java --version
+> /Linux/2.6/ant/apache-ant-1.9.3/bin/ant run-test-integration
