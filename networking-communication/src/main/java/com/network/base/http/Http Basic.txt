@@ -2,33 +2,88 @@ TODO: https://developer.mozilla.org/zh-CN/docs/Web/HTTP
 HTTP协议本质上是"对传输数据进行规范，方便网络传输过程中的沟通"
 HTTP由浏览器产生，负责生成指定的数据(进行包装)
 
-HTTP报文组成
- 1. 请求报文构成:
-    请求行(包括请求方法、URL、协议/版本) + 请求头(Request Header) + 请求正文
- 2. 响应报文构成:
-    状态行 + 响应头 + 响应正文
-
 HTTP is not Stateless protocol无状态的传输协议
-   HTTP request/response pairs are independent of each other
-   HTTP/2 is that it is not a replacement for all of HTTP
-   (The verbs, status codes and most of the headers will remain the same)
+  HTTP request/response pairs are independent of each other
+  HTTP/2 is that it is not a replacement for all of HTTP
+  (The verbs, status codes and most of the headers will remain the same)
 
-TODO. 响应状态码
-1. 状态码分类：
-   1XX - 信息型，服务器收到请求，需要请求者继续操作
-   2XX - 成功型，请求成功收到，理解并处理 ==> 不同的状态码，对应的处理结果不同
-   3XX - 重定向，需要进一步的操作以完成请求
-   4XX - 客户端错误，请求包含语法错误或无法完成请求
-   5XX - 服务器错误，服务器在处理请求的过程中发生了错误
+HTTP报文组成
+1. 请求报文: 请求行(包括请求方法、URL、协议/版本) + 请求头(Request Header) + 请求正文
+2. 响应报文: 状态行 + 响应头 + 响应正文
 
-2. 常见状态码：
-   200 - OK 客户端请求成功
-   301 - 永久重定向: 资源(网页等)永久转移到其它URL
-   302 - 临时重定向: 可以用来统计网址被点击的次数，收集用户Cookie, User Agent等信息做大数据分析
-   400 - Bad Request 客户端请求有语法错误，不能被服务器所理解
-   401 - Unauthorized 请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用
-   403 - Forbidden 服务端禁止访问，不执行授权和重定向，通常是访问的Endpoint整个服务没有启动
-   404 - 请求资源不存在，可能是输入了错误的URL
-   500 - 服务器内部发生了不可预期的错误
-   503 - Server Unavailable 服务无法访问，可能是被异常关闭，服务器不能处理客户端的请求
+发送请求的数据格式
+{
+   "headers": {
+       "Content-Length": "43",
+       "Host": "test.org",
+       "User-Agent": "Java-http-client/12.0.1"
+   },
+   "json": {
+       "name": "John Doe",
+       "occupation": "gardener"
+   },
+   ...
+   "url": "https://httpbin.org/post"
+}
 
+Http Header完整头部信息: org.springframework.http.HttpHeaders
+  ACCEPT = "Accept";
+  ACCEPT_CHARSET = "Accept-Charset";
+  ACCEPT_ENCODING = "Accept-Encoding";
+  ACCEPT_LANGUAGE = "Accept-Language";
+  ACCEPT_RANGES = "Accept-Ranges";
+  ACCESS_CONTROL_ALLOW_CREDENTIALS = "Access-Control-Allow-Credentials";
+  ACCESS_CONTROL_ALLOW_HEADERS = "Access-Control-Allow-Headers";
+  ACCESS_CONTROL_ALLOW_METHODS = "Access-Control-Allow-Methods";
+  ACCESS_CONTROL_ALLOW_ORIGIN = "Access-Control-Allow-Origin";
+  ACCESS_CONTROL_EXPOSE_HEADERS = "Access-Control-Expose-Headers";
+  ACCESS_CONTROL_MAX_AGE = "Access-Control-Max-Age";
+  ACCESS_CONTROL_REQUEST_HEADERS = "Access-Control-Request-Headers";
+  ACCESS_CONTROL_REQUEST_METHOD = "Access-Control-Request-Method";
+  AGE = "Age";
+  ALLOW = "Allow";
+  AUTHORIZATION = "Authorization";
+  CACHE_CONTROL = "Cache-Control";
+  CONNECTION = "Connection";
+  CONTENT_ENCODING = "Content-Encoding";
+  CONTENT_DISPOSITION = "Content-Disposition";
+  CONTENT_LANGUAGE = "Content-Language";
+  CONTENT_LENGTH = "Content-Length";
+  CONTENT_LOCATION = "Content-Location";
+  CONTENT_RANGE = "Content-Range";
+  CONTENT_TYPE = "Content-Type";
+  COOKIE = "Cookie";
+  DATE = "Date";
+  ETAG = "ETag";
+  EXPECT = "Expect";
+  EXPIRES = "Expires";
+  FROM = "From";
+  HOST = "Host";
+  IF_MATCH = "If-Match";
+  IF_MODIFIED_SINCE = "If-Modified-Since";
+  IF_NONE_MATCH = "If-None-Match";
+  IF_RANGE = "If-Range";
+  IF_UNMODIFIED_SINCE = "If-Unmodified-Since";
+  LAST_MODIFIED = "Last-Modified";
+  LINK = "Link";
+  LOCATION = "Location";
+  MAX_FORWARDS = "Max-Forwards";
+  ORIGIN = "Origin";
+  PRAGMA = "Pragma";
+  PROXY_AUTHENTICATE = "Proxy-Authenticate";
+  PROXY_AUTHORIZATION = "Proxy-Authorization";
+  RANGE = "Range";
+  REFERER = "Referer";
+  RETRY_AFTER = "Retry-After";
+  SERVER = "Server";
+  SET_COOKIE = "Set-Cookie";
+  SET_COOKIE2 = "Set-Cookie2";
+  TE = "TE";
+  TRAILER = "Trailer";
+  TRANSFER_ENCODING = "Transfer-Encoding";
+  UPGRADE = "Upgrade";
+  USER_AGENT = "User-Agent";
+  VARY = "Vary";
+  VIA = "Via";
+  WARNING = "Warning";
+  WWW_AUTHENTICATE = "WWW-Authenticate";

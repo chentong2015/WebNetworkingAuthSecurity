@@ -1,5 +1,0 @@
-技术选择: 请求远程URL并获得返回状态
-Call (POST?) to the remote url, retrieve the status:
- - Pool at regular interval the status
- - Wait an answer (sync call without LB, or with websocket or http/2 or SSE)
- - Wait for a call on an internal http server (push mechanism)
