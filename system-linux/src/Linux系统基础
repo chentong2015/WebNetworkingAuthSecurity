@@ -1,8 +1,5 @@
-系统虚拟机:
-将系统切出一块, 像一台机器一样运转, 在硬件中虚拟出来, 和主机共享硬件资源
-
-Linux体系架构:
-内核网络、存储、文件系统、内存、调度器，Cgroup等模块
+系统虚拟机: 将系统切出一块, 像一台机器一样运转, 在硬件中虚拟出来, 和主机共享硬件资源
+Linux体系架构: 内核网络、存储、文件系统、内存、调度器，Cgroup等模块
 
 服务端建立连接通过网口或者是网络驱动程序，来感知事件，最先感知到的是OS
 OS底层具有大量的通讯函数和系统函数来实现通讯，Java只是实现了上层调用
@@ -18,7 +15,13 @@ Linux内核开发: C++/C和汇编语言
 > free –m 命令查看内存的使用情况
 > iostat可以查看磁盘的读写情况
 
+> du -sh /folder 查看指定目录的大小(disc usage)
+   -s, --summarize
+           display only a total for each argument
+    -h, --human-readable
+           print sizes in human readable format (e.g., 1K 234M 2G)
+
 Uyuni: Linux systems management 系统管理工具
 https://www.uyuni-project.org/uyuni-docs/en/uyuni/index.html
 
-Bash shell脚本测试 https://leetcode.com/tag/shell/
+https://leetcode.com/tag/shell/ 脚本测试案例
