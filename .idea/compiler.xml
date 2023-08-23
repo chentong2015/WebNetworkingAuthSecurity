@@ -9,6 +9,7 @@
         <module name="networking-communication" />
         <module name="cyber-security" />
         <module name="system-windows" />
+        <module name="system-cpp" />
         <module name="system-linux" />
       </profile>
     </annotationProcessing>

@@ -13,6 +13,7 @@
         <module>networking-communication</module>
         <module>system-linux</module>
         <module>system-windows</module>
+        <module>system-cpp</module>
     </modules>
 
 </project>
