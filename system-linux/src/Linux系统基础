@@ -8,13 +8,15 @@ OS底层具有大量的通讯函数和系统函数来实现通讯，Java只是�
 OS在收到硬件的中断请求时，会打断正在执行的进程，然后调用内核中中断程序来响应请求
 实例: OS负责从Channels中转移到事件list中
 
+Linux发行版:
+RedHat CentOs Ubuntu Alpine(轻量级 几十M)
+
 Linux内核开发: C++/C和汇编语言
 > man epoll_create 名称查系统函数的介绍
 > man malloc 在内存中分配内存空间，返回指针
 > top 命令可以查看系统平均负载和CPU使用率
 > free –m 命令查看内存的使用情况
 > iostat可以查看磁盘的读写情况
-
 > du -sh /folder 查看指定目录的大小(disc usage)
    -s, --summarize
            display only a total for each argument
@@ -23,5 +25,3 @@ Linux内核开发: C++/C和汇编语言
 
 Uyuni: Linux systems management 系统管理工具
 https://www.uyuni-project.org/uyuni-docs/en/uyuni/index.html
-
-https://leetcode.com/tag/shell/ 脚本测试案例
