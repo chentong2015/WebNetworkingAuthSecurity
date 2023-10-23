@@ -45,8 +45,6 @@ z
 Jnetworking-communication/src/main/java/com/network/base/tcp/BaseTcpIP.java,c\b\cb13b278f22f9a3c96e45681872a55b36492cfb5
 r
 Bnetworking-communication/src/main/java/com/network/base/REST Guide,6\f\6f63c56ad426e808db234f01408667b2627e8201
-�
-[networking-communication/src/main/java/com/network/base/http/statuscode/Http返回状态码,9\8\9835978fc52e04b835b503df5351fe36d4b5bbcf
 {
 Knetworking-communication/src/main/java/com/network/base/http/Http Basic.txt,4\8\48da4afaa34a1544fe9f515676f5a1d30336ea79
 W
