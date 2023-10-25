@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/container-docker/pom.xml" />
+        <option value="$PROJECT_DIR$/networking-web/pom.xml" />
       </set>
     </option>
   </component>

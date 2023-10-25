@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>networking-communication</artifactId>
+    <artifactId>web-networking</artifactId>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
