@@ -45,8 +45,6 @@ z
 Jnetworking-communication/src/main/java/com/network/base/tcp/BaseTcpIP.java,c\b\cb13b278f22f9a3c96e45681872a55b36492cfb5
 r
 Bnetworking-communication/src/main/java/com/network/base/REST Guide,6\f\6f63c56ad426e808db234f01408667b2627e8201
-{
-Knetworking-communication/src/main/java/com/network/base/http/Http Basic.txt,4\8\48da4afaa34a1544fe9f515676f5a1d30336ea79
 W
 'system-linux/src/example/base_script.sh,1\0\10b8657058b102c7d0ebb66df2b47a681e9f6253
 ^
