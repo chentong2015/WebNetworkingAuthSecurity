@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hardware-core/hardware-core.iml" filepath="$PROJECT_DIR$/hardware-core/hardware-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-networking.iml" filepath="$PROJECT_DIR$/web-networking.iml" />
     </modules>
   </component>
 </project>

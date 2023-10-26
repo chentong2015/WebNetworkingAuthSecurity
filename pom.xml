@@ -12,7 +12,6 @@
         <module>system-linux</module>
         <module>system-windows</module>
         <module>system-cpp</module>
-        <module>web-networking</module>
     </modules>
 
 </project>
