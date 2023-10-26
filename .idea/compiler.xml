@@ -7,14 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="web-networking" />
-        <module name="system-linux" />
-        <module name="cyber-security" />
         <module name="system-windows" />
         <module name="system-cpp" />
+        <module name="system-linux" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="container-docker" target="15" />
+      <module name="cyber-security" target="15" />
       <module name="networking-communication" target="15" />
       <module name="networking-web" target="15" />
     </bytecodeTargetLevel>
