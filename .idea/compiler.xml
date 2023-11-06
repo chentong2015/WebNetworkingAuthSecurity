@@ -17,7 +17,6 @@
       <module name="cyber-security" target="15" />
       <module name="networking-communication" target="15" />
       <module name="networking-web" target="15" />
-      <module name="web-networking" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>

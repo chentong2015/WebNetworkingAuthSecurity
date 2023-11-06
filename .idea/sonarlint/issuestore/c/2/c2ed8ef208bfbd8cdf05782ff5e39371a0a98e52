@@ -1,0 +1,14 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ƒÜ8Â¯æ¶1
+7
+java:S1220""Move this file to a named package.8àŸæ¶1
+`
+java:S1854">Remove this useless assignment to local variable "decoderURL".(ô±ûŠşÿÿÿÿ8åŸæ¶1
+[
+java:S1854">Remove this useless assignment to local variable "encoderURL".(÷Èªê8Ç¯æ¶1
+L
+java:S1481"/Remove this unused "encoderURL" local variable.(÷Èªê8È¯æ¶1
+Q
+java:S1481"/Remove this unused "decoderURL" local variable.(ô±ûŠşÿÿÿÿ8îŸæ¶1
+Y
+java:S1144"7Remove this unused private "testEncoderDecoder" method.(µîîòşÿÿÿÿ8É¯æ¶1
