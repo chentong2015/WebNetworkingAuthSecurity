@@ -75,5 +75,5 @@ _
 /web-networking/CDN/Content Delivery Network.txt,c\2\c2f9c6047245ee0a7d9ab0a8176ca5d32a657829
 N
 web-networking/Web Service.txt,e\3\e3c68dc31568ea139ef8b238797171e7ae2e4bf3
-j
-:web-networking/Client Server/Client Server模型设计.txt,8\c\8c28f3a4b831b64d49a55870f1fc0a96419e83ce
+p
+@web-networking/Restful API Endpoint/RESTful API 设计规范.txt,a\8\a8e1006c1593007b7fba8c1289012849ffb04211
