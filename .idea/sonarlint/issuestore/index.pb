@@ -51,3 +51,9 @@ N
 system-linux/Linux系统基础,e\9\e9cd7a6ca35b0f2b6aab4f25ffe4b78c637daef4
 G
 system-linux/Apache Ant,f\a\fa63bc288aa0c5a6cbbe29d5f5bdf1ed222a6d26
+Q
+!system-linux/admin/Linux Core.txt,7\1\7155c6a7ad03df089dff4a12a80c78d6133494e1
+R
+"system-linux/admin/Linux Admin.txt,2\c\2c54eb87227441dc60ee7c77e228878879960064
+R
+"system-linux/admin/Linux Basic.txt,9\2\92860dd8304d08ec8391a5917ec17a0fe2229615

@@ -5,8 +5,6 @@ import java.net.URL;
 
 public class UriUrl {
 
-    private URI uri;
-
     /**
      * Scheme: db
      * Scheme-specific part: //username:password@myserver.com:5000/folder/phones?os=android
@@ -63,6 +61,7 @@ public class UriUrl {
      */
     private void testURL() {
         try {
+            Uri uri = new URI("http://www.test.com")
             URL url = uri.toURL();
             URI uri = url.toURI();
         } catch (MalformedURLException | URISyntaxException exception) {

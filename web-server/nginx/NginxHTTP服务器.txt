@@ -1,0 +1,16 @@
+Nginx开源Web服务器: 
+- 解决C10K问题(10K并发连接)，最大支持50K并发连接
+- IO多路复用，高性能低功耗，热部署
+- 作为反向代理服务器(IMAP/POP3代理服务器)
+
+> nginx -s stop	fast shutdown
+> nginx -s quit	graceful shutdown
+> nginx -s reload	changing configuration,
+  starting new worker processes with a new configuration, graceful shutdown of old worker processes
+> nginx -s reopen	re-opening log files
+
+> nginx -V 查看Nginx安装目录，编译参数以及配置文件路径
+  --conf-path=conf/nginx.conf
+
+> nginx -t 检查配置文件是否有问题
+> nginx -s reload 重新加载配置更新的conf文件

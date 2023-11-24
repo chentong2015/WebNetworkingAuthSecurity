@@ -1,0 +1,8 @@
+TODO. Certificate Authority机构可以提供TSL Certificate认证
+支持快速签发，浏览器地址栏显示绿色小锁图标+https
+CA providing TLS certificates to websites.
+- Entrust
+- Sectigo
+- GeoTrust
+
+https://www.thomasvitale.com/https-spring-boot-ssl-certificate/
