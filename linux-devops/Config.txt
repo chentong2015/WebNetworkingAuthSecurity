@@ -1,0 +1,32 @@
+>ifconfig IP地址确定 + 登陆的用户名和密码
+
+检测ssh服务是否已经打开
+> sudo apt-get install openssh-server 首先安装打开ssh服务的库
+> ps -e | grep ssh 检查当前的ssh开启情况
+
+如果有sshd，则ssh-server已经启动；若仅有agent，则尚未启动； 开启ssh服务：
+  /etc/init.d/ssh start
+# >cd /etc/init.d
+# >./ssh start
+# > netstat -tl
+
+TODO. 生成的SSH密码+验证生成
+> ssh-keygen -t rsa -C "chentong@gmail.com"
+> cd ~/.ssh/
+> ls
+  id_rsa id_rsa.pub
+
+> netstat -anp | grep :22
+> service sshd start 启动
+
+关闭服务器的防火墙，内网使用来进行测试
+> sudo ufw disable   ## to stop the servur fireware
+> sudo ufw enable    ## to start the servur fireware
+
+> service iptables stop
+> service iptables status ==> Stopped IPv4 firewall with iptables (tester stop)
+
+
+
+
+

@@ -1,0 +1,12 @@
+Linux安装并配置Maven(针对ubuntu+Centos7)
+下载maven包： apache-maven-3.5.3-bin.zip 复制路径
+> wget 安装包的网页路径
+> upzip maven的安装包
+> cd
+> pwd
+> vim /etc/profile (系统全局属性配置文件)
+  export MAVEN_HOME=/root/apache-maven-3.5.3
+  export PATH=$MAVEN_HOME/bin:$PATH
+> 加载更新后的配置文件
+> source /etc/profile
+> mvn -version 检测是否是成功的安装maven到Linux服务器

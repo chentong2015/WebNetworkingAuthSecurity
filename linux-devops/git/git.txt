@@ -1,0 +1,13 @@
+Linux服务器安装Git版本控制工具(生成授权的证书)
+> sudo apt-get update
+> sudo apt-get install git
+> git config --global user.name "chentong"
+> git config --global user.email "chentong@gmail.com"
+
+连接Linux和Git：将SSH公钥证书注册到github上面，私钥证书私有保存
+Github > Settings > SSH and GPG keys > new SSH Keys
+   title : linuxEnv
+   add the file : id_rsa.pub
+
+用Linux连接到github(使用SSH确认github可以成功的连接)
+> ssh git@github.com
