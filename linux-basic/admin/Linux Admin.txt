@@ -13,8 +13,9 @@ Linux Administration 运维管理
    Software application used to read and organize news articles from various sources.
 
 4. bash
-   bash is a command shell
-   A program that provides command line interface to interact with OS
+   bash is a command Shell，program that provides CLI to interact with OS
+   zsh is another command of Shell
+   TODO. Shell的一种命令，一种脚本程序提供和OS交互的CLI
 
 5. /dev/lp0
    DOS LPT1 port in Linux

@@ -19,9 +19,9 @@ Linux内核开发: C++/C和汇编语言
 > iostat可以查看磁盘的读写情况
 > du -sh /folder 查看指定目录的大小(disc usage)
    -s, --summarize
-           display only a total for each argument
-    -h, --human-readable
-           print sizes in human readable format (e.g., 1K 234M 2G)
+       display only a total for each argument
+   -h, --human-readable
+       print sizes in human readable format (e.g., 1K 234M 2G)
 
 Uyuni: Linux systems management 系统管理工具
 https://www.uyuni-project.org/uyuni-docs/en/uyuni/index.html
