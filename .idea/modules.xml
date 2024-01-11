@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/OSystemNetworking.iml" filepath="$PROJECT_DIR$/OSystemNetworking.iml" />
       <module fileurl="file://$PROJECT_DIR$/hardware-core/hardware-core.iml" filepath="$PROJECT_DIR$/hardware-core/hardware-core.iml" />
     </modules>
   </component>

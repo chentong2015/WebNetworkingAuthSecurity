@@ -1,5 +1,0 @@
-REST API Endpoints Naming Guide
-https://restfulapi.net/resource-naming/
-
-企业级REST API命名规范: Endpoint需要根据不同版本/服务/Domain进行划分
-A REST API defines Resources. A "resource" can exactly map to system resources.

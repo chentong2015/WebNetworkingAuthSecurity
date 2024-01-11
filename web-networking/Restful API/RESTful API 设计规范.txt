@@ -1,0 +1,29 @@
+TODO. REST:
+REPresentational State Transfer
+REST is set of rules, the common standard for building web API
+REST API defines resources which can map to system resources.
+URIs should only be used to identify the resources and not any action upon them uniquely.
+
+TODO. RESTFull API:
+The API that follows the REST standards
+- GET: Get resources
+- POST: Create resources
+- PUT: Update resources
+- DELETE: Delete resources
+
+TODO. REST API设计核心
+1. REST Implementation need be stateless
+   - Client and Server don't need to store any information of each other
+   - Every request/response is independent of all others
+2. API Endpoint returns a huge amount of data
+   Pagination: limit + offset -> server should assume default values
+   ***/products?limit=25&offset=50
+3. Versioning of API
+   - Support backward
+   - Easy to migration to new version
+
+TODO. 企业级REST API命名规范
+Endpoint中不要使用动词，而应使用名词来表示资源
+Endpoint根据不同版本/服务/Domain进行划分
+https://restfulapi.net/resource-naming/
+
