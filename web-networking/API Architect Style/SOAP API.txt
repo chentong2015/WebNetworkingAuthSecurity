@@ -1,0 +1,3 @@
+SOAP(XML Web Service)通信协议:
+  HTTP Protocol协议 + XML数据格式
+  特定的HTTP消息头，发送的请求内容和结果内容都采用XML格式封装
