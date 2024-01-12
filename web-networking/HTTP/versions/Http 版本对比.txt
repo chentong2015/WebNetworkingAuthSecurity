@@ -1,0 +1,17 @@
+Http 1: 1996
+- Build on top of TCP
+- Request to server requires a separate TCP connection
+
+Http 1.1: 1997
+- "Keep-alive": reuse the same TCP connection
+
+Http 2: 2015
+- "Http Streams": compressed headers
+- "Push Capability":
+  Allow server to send updates to clients whenever new data is available
+  Client does not need to pull data from server
+
+Http: 2022
+- Build on UDP: streams as first-class citizens
+- No need for a handshake to create a new connection
+
