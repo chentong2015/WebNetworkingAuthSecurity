@@ -1,0 +1,17 @@
+什么是心跳机制Heartbeat:
+心跳机制是指为了避免客户端连接的timeout，通过服务端向客户端发送心跳来维持连接
+如果服务端处理数据的时间过长，通常需要在一定的周期时间内发送心跳的信息给客户端
+
+TODO. 心跳机制的设计:
+1. 什么时候开始和关闭心跳
+2. 由于网络中断Client端没有收到Server发送的的心跳，会造成client端将会重新进入timeout问题
+. Client定义timeout时间，并"动态"发送给Server: Server选择time*80%重新计算心跳时间
+
+TODO. 心跳机制的实现案例:
+1. ScheduledExecutorService周期性的执行任务
+2. Spring webmvc/webflux SseEmitter SSE技术的实现 !!
+3. Zookeeper和netty底层心跳机制的实现: 发送的是Socket
+
+https://www.bilibili.com/video/BV1np4y1B7M9?p=6
+https://www.bilibili.com/video/BV1dz4y117WW?p=2
+https://www.bilibili.com/video/BV1wP4y1h766?p=13
