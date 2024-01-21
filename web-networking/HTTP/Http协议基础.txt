@@ -8,17 +8,17 @@ HTTP报文组成
 
 发送请求的数据格式
 {
+   "url": "https://httpbin.org/post"，
    "headers": {
        "Content-Length": "43",
        "Host": "test.org",
        "User-Agent": "Java-http-client/12.0.1"
    },
-   "json": {
+   "body": {
        "name": "John Doe",
        "occupation": "gardener"
    },
    ...
-   "url": "https://httpbin.org/post"
 }
 
 Http Header Full Information:
