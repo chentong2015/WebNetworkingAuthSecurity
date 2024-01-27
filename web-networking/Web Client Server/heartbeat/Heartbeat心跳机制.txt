@@ -9,9 +9,5 @@ TODO. 心跳机制的设计:
 
 TODO. 心跳机制的实现案例:
 1. ScheduledExecutorService周期性的执行任务
-2. Spring webmvc/webflux SseEmitter SSE技术的实现 !!
+2. Spring webmvc/webflux SseEmitter SSE技术的实现
 3. Zookeeper和netty底层心跳机制的实现: 发送的是Socket
-
-https://www.bilibili.com/video/BV1np4y1B7M9?p=6
-https://www.bilibili.com/video/BV1dz4y117WW?p=2
-https://www.bilibili.com/video/BV1wP4y1h766?p=13
