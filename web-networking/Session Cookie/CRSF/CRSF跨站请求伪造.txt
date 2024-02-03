@@ -1,0 +1,6 @@
+Cross Site Request Forgery 跨站请求伪造，一种网络工具方式
+CSRF产生的本质在于浏览器保存的cookie中的session信息能够在不同的Tab之间共享
+
+TODO. 如何避免CSRF网络请求攻击 ? Synchronizer Token Pattern
+防范CSRF攻击的主要且最全面的方法是使用同步器令牌模式
+确保每个HTTP请求除了会话cookie之外还需要HTTP请求中存在一个称为CSRF令牌的安全随机生成值
