@@ -1,5 +1,17 @@
 Linux Administration 运维管理
 
+> man epoll_create 名称查系统函数的介绍
+> man malloc       在内存中分配内存空间，返回指针
+> top              查看系统平均负载和CPU使用率
+> free –m          命令查看内存的使用情况
+> iostat           查看磁盘的读写情况
+> time command     确定某个指令执行的时间
+> du -sh /folder   查看指定目录的大小(disc usage)
+   -s, --summarize
+       display only a total for each argument
+   -h, --human-readable
+       print sizes in human readable format (e.g., 1K 234M 2G)
+
 1. /etc/motd
    The message of the day (motd) file is located in the /etc directory
    Display a custom message to users when they log in to the system.
@@ -53,13 +65,3 @@ Linux Administration 运维管理
 15. Recover the root password after forgetting
     挂载root分区，编辑/etc/passwd文件删除root密码，重启
     Mount the root partition, edit the /etc/passwd file to remove the root password, reboot.
-
-
-
-
-
-
-
-
-
-

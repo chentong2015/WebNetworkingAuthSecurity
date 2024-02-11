@@ -1,11 +1,11 @@
->ifconfig IP地址确定 + 登陆的用户名和密码
+> ifconfig IP地址确定 + 登陆的用户名和密码
 
 检测ssh服务是否已经打开
 > sudo apt-get install openssh-server 首先安装打开ssh服务的库
 > ps -e | grep ssh 检查当前的ssh开启情况
 
-如果有sshd，则ssh-server已经启动；若仅有agent，则尚未启动； 开启ssh服务：
-  /etc/init.d/ssh start
+如果有sshd，则ssh-server已经启动；若仅有agent，则尚未启动；
+开启ssh服务：/etc/init.d/ssh start
 # >cd /etc/init.d
 # >./ssh start
 # > netstat -tl
