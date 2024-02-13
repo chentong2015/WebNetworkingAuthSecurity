@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/web-networking/Session Cookie/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/web-networking/Session Cookie/java/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/web-networking/Url Uri/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web-networking/Encryption/java" isTestSource="false" />
     </content>
   </component>
 </module>

@@ -8,7 +8,6 @@
 2. 对称加密两次得到得结果不同
 3. 非对称加密中生成一对密钥，公开其中的一部分，私钥一定在自己的手中
 
-实现: apache-commons-codec
 Simple encoder and decoders for various formats such as Base64 and Hexadecimal.
 The codec package also maintains a collection of phonetic encoding utilities.
 <dependency>
