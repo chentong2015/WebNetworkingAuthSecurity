@@ -1,13 +1,34 @@
-TODO: JWT将Session数据存储在客户端，请求时发送给服务器进行验证(跨域认证?)
-JSON Web Token设计模型:
+JSON Web Token设计模型(生成和请求流程)：分动态和静态两种
 1. 用户使用用户名密码来请求服务器
 2. 服务器进行验证用户的信息
 3. 服务器通过验证发送给用户一个token
-4. 客户端存储token，并在每次请求时附送上这个token值
+4. 客户端存储token(session数据)，并在每次请求时附上token
 5. 服务端验证token值，并返回数据
 
-0. jwt在服务器端签发生成
-1. 服务端策略: 支持CORS(跨来源资源共享), Access-Control-Allow-Origin: *
-2. 服务端私钥secret: 用来进行jwt的签发和jwt的验证，避免泄漏，以免客户端签发有效的jxt，使用有效的Token登录
-3. 可以授权token的有效时间，在期间中，始终有效(无法废除)
-4. JWT本身包含了认证信息，需要使用https协议传输
+TODO: JWT签发策略
+1. JWT在服务器端签发生成，避免泄漏
+2. 服务端策略: 支持CORS(跨来源资源共享), Access-Control-Allow-Origin: *
+3. 服务端私钥: 用来进行JWT签发和验证，以免客户端签发有效的JWT
+
+TODO. JWT访问令牌Token生成
+JWT令牌的结构为三部分组成：令牌头(Header).负载信息(Payload).签名(Signature)
+- 令牌头：定义了令牌的元数据，如令牌采用的签名算法，默认为HMAC SHA256算法
+- 负载信息：由签发者自定义的数据，一般包括过期时间(Expire)、授权范围(Authority)、令牌ID编号(JTI)等
+- 签名：签名是使用私钥和头部指定的算法，前两部分进行的数字签名，防止数据被篡改
+令牌头和负载均为JSON结构，进行Base64URLEncode之后进行签名，然后用“.”连接，构成令牌报文
+
+TODO. JWT生成代码: 默认签名算法 + Payload信息设置 + key
+new IdTokenInfo.IdTokenInfoBuilder()
+    .setClientId(clientId)
+    .setGroupType(IdTokenInfo.GroupType.fromValue(groupType))
+    .setGroup(groupName)
+    .setUserId(Integer.parseInt(TOKEN_USERID))
+    .setCreationDate(new Date())
+    .setExpiryTime(expiryTime)
+    .setIssueTime(now)
+    .setSid(Integer.parseInt(TOKEN_SID))
+    .setUsername(TOKEN_USERNAME)
+    .setUserLabel(TOKEN_USERNAME)
+    .setTenantId(tenantID)
+    .setIssuer(issuer)
+    .build(), key);
