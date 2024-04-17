@@ -1,0 +1,6 @@
+在Window使用Linux需要通过特定的平台
+- WSL: Windows Subsystem for Linux 安装Docker时需要借助WSL
+- Babun: Windows Shell 在Wind系统执行Linux Shell命令
+
+在Mac系统使用Windows系统需要借助特定软件
+- Paralels Desktop
