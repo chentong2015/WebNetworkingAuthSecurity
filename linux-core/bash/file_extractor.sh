@@ -9,6 +9,3 @@ grep -m 1 -A 1000 'uid="11235"' file.xml >> result.xml
 
 # 最后补充文件的结尾标签
 tail -1 file.xml >> result.xml
-
-
-
