@@ -16,7 +16,7 @@ public class JavaxCertificateDemo {
         byte[] x509bytes = Base64.getDecoder().decode(x509Base64);
         X509Certificate certificate1 = X509Certificate.getInstance(x509bytes);
 
-        InputStream inputStream = new FileInputStream("test.crt");
+        InputStream inputStream = new FileInputStream("sample.crt");
         try {
            X509Certificate certificate2 = X509Certificate.getInstance(inputStream);
            System.out.println(certificate2);
