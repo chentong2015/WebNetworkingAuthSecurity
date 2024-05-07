@@ -1,0 +1,18 @@
+加密算法类型:
+- Hash Encryption 哈希加密: MD5, SHA-1
+- Symmetric Encryption 对称加密: AES128, AES256, DES(已被破解)
+- Asymmetric Encryption 非对称加密: RSA, DH
+
+实战运用与三种设计模型:
+1. 加密方式(计算逻辑)可以混合使用
+2. 对称加密两次得到得结果不同
+3. 非对称加密中生成一对密钥，公开其中的一部分，私钥一定在自己的手中
+
+Simple encoder and decoders for various formats such as Base64 and Hexadecimal.
+The codec package also maintains a collection of phonetic encoding utilities.
+<dependency>
+    <groupId>commons-codec</groupId>
+    <artifactId>commons-codec</artifactId>
+    <version>1.15</version>
+</dependency>
+

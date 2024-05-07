@@ -2,7 +2,10 @@
 <module version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Encryption/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/web-networking/HTTPS SSL/Certificate/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web-networking/JsonWebToken/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web-networking/Url Uri/java" isTestSource="false" />
     </content>
   </component>
 </module>

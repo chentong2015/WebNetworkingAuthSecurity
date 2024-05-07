@@ -7,9 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="web-networking" />
+        <module name="spring-web-sse-server" />
+        <module name="system-linux" />
+        <module name="spring-web-sse-base" />
         <module name="system-windows" />
         <module name="system-cpp" />
-        <module name="system-linux" />
+        <module name="web-networking-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

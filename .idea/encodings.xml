@@ -7,6 +7,16 @@
     <file url="file://$PROJECT_DIR$/../../Java EE Master/JavaEEMaster/distributed-systems/load-balance-nginx/load balancer/负载均衡策略优化.JPG" charset="GBK" />
     <file url="file://$PROJECT_DIR$/container-docker/src/main/java/docker/BaseDocker.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/container-docker/src/main/java/kubernetes/BaseKubernetes.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web-networking-impl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-networking-impl/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-networking-impl/web-networking-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-networking-impl/web-networking-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-networking-impl/web-sse-impl/spring-web-sse-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-networking-impl/web-sse-impl/spring-web-sse-base/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-networking-impl/web-sse-impl/spring-web-sse-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-networking-impl/web-sse-impl/spring-web-sse-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-networking-impl/web-sse-impl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-networking-impl/web-sse-impl/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-networking/Web Client Server/proxy/Forward正向代理.JPG" charset="GBK" />
     <file url="file://$PROJECT_DIR$/web-networking/Web Client Server/proxy/Reverse反向代理.JPG" charset="GBK" />
   </component>

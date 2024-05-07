@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Server-Sent Events client example with EventSource</title>
+</head>
+<body>
+<script>
+    // 检测浏览器是否SSE
+    if (window.EventSource == null) {
+        alert('The browser does not support Server-Sent Events');
+    } else {
+        // JS Request可能需要提供token才能访问　
+        const eventSource = new EventSource('/sse/mvc/words', {
+            header: {
+                "Authorization": 'Bearer xxxxxx',
+                "Content-Type": 'text/event-stream,charset=UTF-8'
+            }
+        });
+
+        eventSource.eventSource.onopen = function () {
+            console.log('connection is established');
+        };
+
+        eventSource.onmessage = function (event) {
+            console.log('id: ' + event.lastEventId + ', data: ' + event.data);
+            if (event.data.endsWith('.')) {
+                eventSource.close();
+                console.log('connection is closed');
+            }
+        };
+
+        eventSource.addEventListener('type1', function (event) {
+            console.log('id: ' + event.lastEventId + ', data: ' + event.data);
+        }, false);
+
+        eventSource.onerror = function (error) {
+            console.log('connection state: ' + eventSource.readyState + ', error: ' + error);
+        };
+    }
+</script>
+</body>
+</html>

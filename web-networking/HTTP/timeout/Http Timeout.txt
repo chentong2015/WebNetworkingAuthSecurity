@@ -1,0 +1,15 @@
+TODO. HTTP Request请求存在不同的超时(timeout)
+通常对于耗时的请求而言，从建立连接到接受返回的数据会由于timeout而中断
+
+Request timeout 整个请求时间的Timeout
+Time period required to process an HTTP call: from sending a request to receiving a response.
+
+Connection timeout 创建连接的Timeout
+Time period in which a client should establish a connection with a server.
+
+Socket timeout 交换数据包的间隔Timeout
+Maximum time of inactivity between two data packets when exchanging data with a server.
+
+
+Read timeout / Response timeout 接受返回数据的Timeout
+Time period until a response is received

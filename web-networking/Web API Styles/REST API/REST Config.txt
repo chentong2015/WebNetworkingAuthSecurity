@@ -1,0 +1,10 @@
+# REST config
+client.rest.ssl.protocol=mtls
+client.rest.ssl.trust-strategy=none
+client.rest.ssl.trust-store=classpath:keystore/client-truststore.jks
+client.rest.ssl.trust-store-password=trustpwd
+
+client.rest.ssl.key-store=classpath:keystore/client-keystore.jks
+client.rest.ssl.key-store-password=storepwd
+client.rest.ssl.key-alias=client-keys
+client.rest.ssl.key-password=keypwd

@@ -1,0 +1,11 @@
+# SOAP config
+client.soap.default-uri=https://localhost:8443/ws/ticketagent
+client.soap.ssl.protocol=mtls
+client.soap.ssl.trust-strategy=none
+#client.soap.ssl.trust-store=classpath:keystore/client-truststore.jks
+#client.soap.ssl.trust-store-password=trustpwd
+
+client.soap.ssl.key-store=classpath:keystore/client-keystore.jks
+client.soap.ssl.key-store-password=storepwd
+client.soap.ssl.key-alias=client-keys
+client.soap.ssl.key-password=keypwd

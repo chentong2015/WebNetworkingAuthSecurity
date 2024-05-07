@@ -1,0 +1,9 @@
+TODO: Javascript Client API for SSE
+Defines an EventSource and subscribes to the message event stream
+前端订阅指定的消息事件流，客户端在断开之后将会自动重连，继续接受Server端发送的信息
+
+SSE EventSource Doc
+https://html.spec.whatwg.org/multipage/server-sent-events.html#eventsource
+
+Automatic reconnect on client-side and implemented reconnect on server-side
+https://www.codeheroes.fr/2020/06/02/communication-temps-reel-avec-server-sent-events-sse/
