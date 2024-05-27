@@ -1,5 +1,3 @@
-package org.example;
-
 import java.net.*;
 
 public class JavUrlUriDemo {

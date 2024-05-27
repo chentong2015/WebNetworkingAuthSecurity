@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/web-networking/HTTPS SSL/Certificate/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/web-networking/JsonWebToken/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/web-networking/Url Uri/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web-networking/Certificate/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web-networking/Session Cookie/java" isTestSource="false" />
     </content>
   </component>
 </module>

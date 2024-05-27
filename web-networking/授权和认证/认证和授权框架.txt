@@ -1,0 +1,8 @@
+Authentication  身份认证: 验证用户的账户(username,password)
+Authorization   授权执行: 对用户的行为进行控制(角色, 权利)
+  - hasRole, hasAnyRole
+  - hasAuthority, hasAnyAuthority
+  - permitAll, denyAll
+  - isAnonymous, isRememberMe, isAuthenticated, isFullyAuthenticated
+  - principal, authentication
+  - hasPermission
