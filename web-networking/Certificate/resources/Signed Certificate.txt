@@ -1,0 +1,36 @@
+[ 注明签名的算法和相关信息
+  [
+    Version: V3
+    Subject: CN=accounts.accesscontrol.windows.net
+    Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+    Key:  Sun RSA public key, 2048 bits
+    params: null
+    modulus: 204805896634177086964****
+    public exponent: 65537
+    Validity: [From: Thu Apr 11 18:04:26 CEST 2024,
+                 To: Wed Apr 11 18:04:26 CEST 2029]
+    Issuer: CN=accounts.accesscontrol.windows.net
+    SerialNumber: [ 39dc2e31 d1d51a41]
+
+  Certificate Extensions: 1
+  [1]: ObjectId: 2.5.29.14 Criticality=false
+  SubjectKeyIdentifier [
+  KeyIdentifier [
+  0000: D7 A7 D2 C4 54 FD 82 66   23 34 84 43 F9 B7 5F 25  ....T..f#4.C.._%
+  0010: FE C0 C0 7F                                        ....
+  ]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 1F 9B C8 86 10 C2 F1 DF   B7 D6 C9 BD 2E 8E 4E 86  ..............N.
+0010: 5B 1A 6E 6B FB 78 0D C9   81 72 B0 EF 1E 15 0C 5A  [.nk.x...r.....Z
+0020: 10 C6 B6 47 33 0D 2A B1   03 A4 F5 B4 EB C0 91 DA  ...G3.*.........
+0030: D3 DA 34 09 09 0E F1 56   46 E7 32 74 66 95 E9 95  ..4....VF.2tf...
+0040: 1B 6B 37 C1 5A 28 22 DB   D6 AB 2D 17 63 FA C2 E6  .k7.Z("...-.c...
+0050: 48 65 1D 44 25 32 5B E0   BE 55 BE 16 92 52 21 56  He.D%2[..U...R!V
+****
+
+]

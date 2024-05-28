@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/web-networking/Url Uri/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/web-networking/Certificate/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/web-networking/Session Cookie/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web-networking/Certificate/resources" type="java-resource" />
     </content>
   </component>
 </module>

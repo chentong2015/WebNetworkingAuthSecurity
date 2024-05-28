@@ -7,22 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="web-networking" />
-        <module name="system-linux" />
         <module name="system-windows" />
         <module name="system-cpp" />
-        <module name="web-networking-core" />
-      </profile>
-      <profile name="Annotation profile for SystemNetworking" enabled="true">
-        <sourceOutputDir name="../../../../System Networking/SystemNetworking/web-networking-impl/web-sse-impl/spring-web-sse-base/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../../../System Networking/SystemNetworking/web-networking-impl/web-sse-impl/spring-web-sse-base/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="spring-web-sse-base" />
-      </profile>
-      <profile name="Annotation profile for spring-web-sse-server" enabled="true">
-        <sourceOutputDir name="../../../../System Networking/SystemNetworking/web-networking-impl/web-sse-impl/spring-web-sse-server/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../../../System Networking/SystemNetworking/web-networking-impl/web-sse-impl/spring-web-sse-server/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="spring-web-sse-server" />
+        <module name="system-linux" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,7 +17,11 @@
       <module name="cyber-security" target="15" />
       <module name="networking-communication" target="15" />
       <module name="networking-web" target="15" />
+      <module name="spring-web-sse-base" target="17" />
+      <module name="spring-web-sse-server" target="17" />
+      <module name="web-networking-core" target="17" />
       <module name="web-networking-impl" target="17" />
+      <module name="web-sse-impl" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

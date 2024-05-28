@@ -1,5 +1,3 @@
-package org.example.certificate;
-
 import javax.security.cert.CertificateException;
 import javax.security.cert.X509Certificate;
 import java.io.FileInputStream;
@@ -11,7 +9,8 @@ import java.util.Base64;
 // Use the classes in java.security.cert instead
 public class JavaxCertificateDemo {
 
-    public static void main(String[] args) throws Exception {
+    // 以下代码只能运行在JDK 8版本上
+    public static void mainTest(String[] args) throws Exception {
         String x509Base64 = "code";
         byte[] x509bytes = Base64.getDecoder().decode(x509Base64);
         X509Certificate certificate1 = X509Certificate.getInstance(x509bytes);
