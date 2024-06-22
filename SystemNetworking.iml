@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
-  <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$" dumb="true">
       <sourceFolder url="file://$MODULE_DIR$/Encryption/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/web-networking/HTTPS SSL/Certificate/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web-networking/JsonWebToken/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/web-networking/Url Uri/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web-networking/Certificate/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/web-networking/Session Cookie/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/web-networking/Certificate/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/web-networking/HTTPS SSL/Certificate/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web-networking/HTTPS SSL/Certificate/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/web-networking/Web Auth/JWToken/java" isTestSource="false" />
     </content>
   </component>
 </module>
