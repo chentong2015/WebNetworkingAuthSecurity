@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+# 变量赋值操作, 使用$符号表示对变量的引用
+value="test value"
+result=$value
+echo "The result is $result"
+
+# 按照指定的字符分割，提取最后段的字符串
+class_name=`echo $result | awk -F"/" '{print $NF}' | awk -F "." '{print $1}'`
+
 # 判断文件是否是目录
 if [[ -d output ]]
 then

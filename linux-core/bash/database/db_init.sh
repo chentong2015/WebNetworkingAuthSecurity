@@ -5,5 +5,6 @@ which psql > /dev/null || (echoerr "The PostgreSQL client is not in your PATH" &
 
 export PGPASSWORD=secret_password
 
-psql -U user1 -d secret_database -h localhost -f schema.sql
+# 连接DB并直接执行SQL脚本，准备数据库基础数据
+psql -U user1 -d secret_database -h localhost -f creation.sql
 psql -U user1 -d secret_database -h localhost -f data.sql
