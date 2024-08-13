@@ -2,28 +2,30 @@ TODO. REST: REPresentational State Transfer
 REST is set of rules, the common standard for building web API
 REST API defines resources which can map to system resources
 URIs should only be used to identify the resources and not any action upon them uniquely
+
 RESTFull API follows the REST standards (GET / POST / PUT / DELETE)
 
-TODO. REST API设计规范
+TODO. REST API设计规范  https://restfulapi.net/resource-naming/
 1. REST Implementation need be stateless
    - Client and Server don't need to store any information of each other
    - Every request/response is independent of all others
 2. API Endpoint returns a huge amount of data
    - Pagination: limit + offset -> server should assume default values
    - */products?limit=25&offset=50
-3. Versioning of API 设计版本，向后兼容并便于移植升级
-4. Service and domain 根据不同的服务和区域进行划分
-5. Endpoint不要使用动词，而应使用名词来表示资源
-   https://restfulapi.net/resource-naming/
+3. Versioning of API
+   - Support Backwards compatibility and migration
+4. Service and domain
+   - version/service/resource
+   - version/domain/resource
+5. Resource is Noun, not verb
+6. Parameters ?
+   - Request url can't contain sensitive information
+   - Url parameter is for locating Resource
+   - Request body will contain large object/json
 
-
-TODO. 好的REST API需要考虑哪些方面 ?
-1. 请求的类型 @RequestMapping
-2. 请求的授权 @PreAuthorize
-3. 请求传递的参数 @RequestParam @RequestBody
-4. API的异常处理 @ControllerAdvice(全局异常处理) @ExceptionHandler(局部方法)
-5. 请求的返回 ResponseEntity<>
-
-TODO. REST API中是否应该带有参数，应该带什么参数，有什么好处 ？
-1. API中应该带有关资源的参数，不能携带敏感信息
-2. API中传递变量参数和方法操作相关或和资源定位相关，大数据应该通过body传递
+TODO. Spring Boot REST API 设计规范
+1. 请求的类型 @RequestMapping @GetMapping
+2. 认证和授权 @PreAuthorize
+3. 请求的参数 @PathVariable @RequestParam @RequestBody
+4. 异常的处理 @ControllerAdvice(全局处理) @ExceptionHandler(局部方法)
+5. 返回的数据 ResponseEntity<Object> 携带Response Codes
