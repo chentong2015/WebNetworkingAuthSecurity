@@ -1,4 +1,5 @@
-1. "man" command in Linux is used to read the manual for various applications
+1. "man"
+   read the manual for various applications
 
 2. Ping
    for network troubleshooting and testing connectivity between two devices.
@@ -11,6 +12,9 @@
 5. chmod 修改文件的执行权
    -rwxr-xr-- 754 分布以三个bit位进行统计(read + write + execute)
    -r--r--r-- 444
+
+   chown 修改文件或者目录的所有权ownership
+   change the ownership of a file
 
 6. cp test.txt testCopy.txt    复制文件
    mv test.txt testNewName.txt 修改文件名称

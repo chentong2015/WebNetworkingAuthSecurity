@@ -1,3 +1,4 @@
+
 wc -l filename.txt # 统计文件的行数
 find . -name /folder  # 找到指定目录下包含指定名称的文件
 find ./test01/ -type f -name *.java | wc -l # 找到指定的目录下java文件的数量
