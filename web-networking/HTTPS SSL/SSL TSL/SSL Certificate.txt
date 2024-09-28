@@ -7,3 +7,10 @@ Secure Sockets Layer(SSL) 安全套接字层
 TODO. TLS最新加密协议
 SSL 协议中存在多个已知漏洞，大多数现代Web浏览器已彻底不再支持SSL
 SSL 最终演变为传输层安全性(TLS)，TLS加密的前身
+
+TODO. Mutual TLS 简称mTLS，是一种相互身份验证的方法
+mTLS通过验证他们都拥有正确的私人密钥来确保网络连接两端的各方都是他们声称的身份
+他们各自的TLS 证书中的信息提供了额外的验证
+mTLS 通常被用于Zero Trust 安全框架*，以验证组织内的用户、设备和服务器
+
+https://aws.amazon.com/what-is/ssl-certificate/

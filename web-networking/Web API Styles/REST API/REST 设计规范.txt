@@ -3,10 +3,10 @@ REST is set of rules, the common standard for building web API
 REST API defines resources which can map to system resources
 URIs should only be used to identify the resources and not any action upon them uniquely
 
-RESTFull API follows the REST standards (GET / POST / PUT / DELETE)
+RESTFull API follows the REST standards: GET / POST / PUT / DELETE
 
 TODO. REST API设计规范  https://restfulapi.net/resource-naming/
-1. REST Implementation need be stateless
+1. Stateless Communication
    - Client and Server don't need to store any information of each other
    - Every request/response is independent of all others
 2. API Endpoint returns a huge amount of data
@@ -14,13 +14,9 @@ TODO. REST API设计规范  https://restfulapi.net/resource-naming/
    - */products?limit=25&offset=50
 3. Versioning of API
    - Support Backwards compatibility and migration
-4. Service and domain
-   - version/service/resource
-   - version/domain/resource
 5. Resource is Noun, not verb
-6. Parameters ?
-   - Request url can't contain sensitive information
    - Url parameter is for locating Resource
+   - Request url can't contain sensitive information
    - Request body will contain large object/json
 
 TODO. Spring Boot REST API 设计规范

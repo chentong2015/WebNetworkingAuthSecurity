@@ -1,7 +1,8 @@
 SOAP(XML Web Service)通信协议:
-  HTTP Protocol协议 + XML数据格式
-  特定的HTTP消息头，发送的请求内容和结果内容都采用XML格式封装
+1. 一种标准协议
+2. 支持多种应用层面的请求Protocol
+3. 要求返回的数据必须采用XML进行封装
 
-SOAP的实现可能在请求的Header头部添加以下值，从而造成请求异常
-  "Transfer-Encoding"
-  "Content-Length"
+SOAP的实现可能在请求的Header头部添加以下值造成请求异常
+"Transfer-Encoding"
+"Content-Length"
