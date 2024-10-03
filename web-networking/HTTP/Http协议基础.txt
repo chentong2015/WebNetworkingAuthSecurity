@@ -1,8 +1,0 @@
-HTTP协议本质上是"对传输数据进行规范，方便网络传输过程中的沟通"
-HTTP由浏览器产生，负责生成指定的数据(进行包装)
-
-HTTP报文组成
-1. 请求报文: 请求行(包括请求方法、URL、协议/版本)+请求头(Header)+请求正文(Body)
-2. 响应报文: 状态行 + 响应头 + 响应正文
-
-TODO: https://developer.mozilla.org/zh-CN/docs/Web/HTTP

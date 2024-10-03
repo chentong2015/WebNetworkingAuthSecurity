@@ -1,0 +1,13 @@
+TODO. Session
+用于在clients和servers直接交换上下文信息Context
+数据能够记录用户的登陆状态，在重新访问网页时完成身份认证(有效时间之内)
+
+TODO. Cookie: 浏览器端的缓存状态信息State information
+1. Cookie中通常包含用户session的回话信息
+2. 在发送请求时，浏览器会自动将cookie信息添加到HTTP请求中
+Cookies are automatically included in the HTTP request by the browser.
+
+Cookie相关属性设置：
+expires: session has time out
+httpOnly: if true then browser script won’t be able to access the cookie
+secure: if true then the cookie will be sent only over HTTPS connection

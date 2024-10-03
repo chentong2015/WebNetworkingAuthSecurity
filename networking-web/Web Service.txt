@@ -1,0 +1,12 @@
+Web Service网络服务
+1. 跨编程语言和跨操作系统平台的远程调用技术
+2. 采用HTTP协议传输数据，采用XML格式封装数据
+
+如何监控Service服务端性能? 要考虑哪些数据?
+1. committed virtual memory size
+2. total swap space size
+3. free swap space size
+4. total physical memory size
+5. free physical memory size
+6. system CPU load
+7. process CPU load
