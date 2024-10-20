@@ -1,2 +1,2 @@
-CVE 检查公共的安全问题
-https://cve.mitre.org/
+OWASP Top 10 vulnerabilities 网络安全漏洞
+https://owasp.org/www-project-top-ten/
