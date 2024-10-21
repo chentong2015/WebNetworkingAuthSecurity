@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SystemNetworking.iml" filepath="$PROJECT_DIR$/SystemNetworking.iml" />
       <module fileurl="file://$PROJECT_DIR$/hardware-core/hardware-core.iml" filepath="$PROJECT_DIR$/hardware-core/hardware-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-networking-impl/web-sse-impl/spring-web-sse-base/spring-web-sse-base.iml" filepath="$PROJECT_DIR$/web-networking-impl/web-sse-impl/spring-web-sse-base/spring-web-sse-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-networking-impl/web-sse-impl/spring-web-sse-server/spring-web-sse-server.iml" filepath="$PROJECT_DIR$/web-networking-impl/web-sse-impl/spring-web-sse-server/spring-web-sse-server.iml" />
