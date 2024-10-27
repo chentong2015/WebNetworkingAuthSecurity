@@ -1,2 +1,0 @@
-DNS(Domain name system):
-Map machine names to IP Address
