@@ -1,0 +1,16 @@
+TODO: TCP协议具体由OS操作系统来实现
+不同OS底层实现不同(汇编指令不同，硬件不同)，不同操作系统之间暴露的接口不同
+
+TODO: Linux内核源码对于TCP协议的实现
+linux > net > ipv4 > tcp_input.c tcp_output.c 底层源码的接口
+第一阶段: 客户端发送SYN给服务端
+int tcp_connect(struct sock *sk 数据)
+
+第二阶段: 服务端返回ACK给客户端
+int tcp_send_synack(struct sock *sk)
+
+第三阶段: 客户端发送ACK给服务端
+void __tcp_send_ack(struct sock *sk, u32 rcv_nxt)
+
+TODO. Socket接口: 调用OS对于TCP协议的实现
+系统底层的实现不能直接被上层APP代码调用，通过调用Socket API实现调用并进行Networking
