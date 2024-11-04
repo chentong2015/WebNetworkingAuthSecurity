@@ -1,0 +1,28 @@
+TODO. Request Forgery 请求伪造
+通过伪造请求来获取非法数据，伪造能够被Auth的请求来获取数据
+
+1. Server Side Request Forgery
+   在Server端伪造一个在服务端内网有效的请求，通过执行获取非法数据
+   用户端是否必须输入完成的URLs链接 ?
+   服务端是否必须指定动态的URL请求 ?
+
+   - Blacklisting: block URLs containing certain IPs or host name 阻止特定请求的访问
+   - Whitelisting: enforce URLs to start with, end with or contains certain string
+   - Whitelisting Plus: 从特定的URL Domain执行redirect可能会再次造成SSRF
+   - No Output/Blind SSRF: 执行user提供的url但是并不返回数据
+
+   - URL parsing libraries
+   - No Raw responses: need to validate the response
+   - Disable redirection: webclient doesn't follow redirects when request
+   - Enable Authentication on internal services 内部的服务需要认证
+
+2. Cross-Site Request Forgery
+   通过非法获取用户的Session伪造能够通过验证的请求
+   问题的本质在于浏览器保存的cookies中session信息能够在不同的Tab之间共享
+
+   - Synchronizer Token Pattern 同步器令牌模式
+     确保每个HTTP请求除会话cookie之外还需HTTP请求中存在一个称为CSRF令牌安全随机生成值
+   - Custom Request Header
+     SOP: Same-origin Policy 网站网站被其他网站攻击，阻止其它Website来访问数据
+   - Cross-Origin Resource Sharing
+     跨域资源共享，允许其它Website访问某些特定的资源数据
