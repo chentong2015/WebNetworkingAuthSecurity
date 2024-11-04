@@ -1,0 +1,2 @@
+Content Security Policy
+Set of rules instructing browser on what kind of content is allowed to load
