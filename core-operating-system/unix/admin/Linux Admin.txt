@@ -53,3 +53,4 @@ Linux Administration 运维管理
 15. Recover the root password after forgetting
     挂载root分区，编辑/etc/passwd文件删除root密码，重启
     Mount the root partition, edit the /etc/passwd file to remove the root password, reboot.
+

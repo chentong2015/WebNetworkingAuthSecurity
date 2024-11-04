@@ -33,3 +33,6 @@
 
 > service iptables stop
 > service iptables status ==> Stopped IPv4 firewall with iptables (tester stop)
+
+> nc -lnvp 1337
+# listening on [any] 1337 for connections

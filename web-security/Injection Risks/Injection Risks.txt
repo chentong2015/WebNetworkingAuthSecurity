@@ -1,6 +1,22 @@
+TODO. Injection vulnerabilities:
+User input being trusted in DB query without sanitization.
 通过注入特定的Risk代码，修改原本后端执行的逻辑，造成安全问题
-Injection vulnerabilities:
+- 用户提供的login等消息需要做验效处理
+- 用户提供的执行的Query必须验证处理
+
 1. SQL Injection
-2. OS Command Injection
-3. Code Injection
-4. SSTI Template Injection
+   非法获取用户数据信息，修改或删除数据
+   非法植入backdoor伪造管理员('admin', 'admin', true)
+   - 使用ORM Module, Stored Procedure
+   - 使用Prepared Statement
+
+2. OS Command Injection & Code Injection
+   Run directly the user input command on OS
+   - 避免在后端直接执行OS Command命令，替换成API Code
+   - 如果必须使用OS Command命令，必须验校后再使用
+
+3. Server Side Template Injection
+   Use Template Engine to load dynamic user input data.
+   攻击者通过在模板引擎中注入Code, 当引擎渲染页面时执行Injected Code
+   - 不要将user-input设置到template string
+   - 使用"logic-less" templating engine (Mustache)
