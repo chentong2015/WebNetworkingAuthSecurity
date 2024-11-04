@@ -2,8 +2,7 @@ OWASP 应用安全项目, 分析Web安全漏洞
 Open Worldwide Application Security Project
 https://owasp.org/www-project-top-ten/
 
-OWASP WSTG 网络安全测试指导
-Web Security Testing Guide
+WSTG: Web Security Testing Guide
 https://owasp.org/www-project-web-security-testing-guide/
 
 Wizer Security Training: 2016+TCHong123&
