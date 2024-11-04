@@ -1,0 +1,5 @@
+IDOR: Access Control vulnerabilities
+Objects are references directly by user inputs without verify user's access
+
+Accessing personal, sensitive or private information,
+We need to implement access controls and ensure access is allowed !

@@ -1,0 +1,6 @@
+通过注入特定的Risk代码，修改原本后端执行的逻辑，造成安全问题
+Injection vulnerabilities:
+1. SQL Injection
+2. OS Command Injection
+3. Code Injection
+4. SSTI Template Injection

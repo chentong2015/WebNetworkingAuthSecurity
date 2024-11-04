@@ -1,2 +1,0 @@
-OWASP Top 10 vulnerabilities 网络安全漏洞
-https://owasp.org/www-project-top-ten/

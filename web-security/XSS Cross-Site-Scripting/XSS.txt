@@ -1,0 +1,16 @@
+Why XSS Attack happen ? => 永远不要相信用户的输入
+The use of untrusted data without performing proper validation.
+The untrusted data is any data that user can manipulate.
+(URL Parameters, Cookies, Form Fields, Header, Post Parameters)
+
+TODO. XSS不同类型
+1. Reflected XSS:
+   服务端错误的将用户的输入作为Response返回
+   Web Server takes user input and directly put it in the response.
+
+2. Stored XSS:
+   用户注入的攻击代码将被持久化到DB中存储
+   User data is stored in DB and then outputted to the screen.
+
+3. DOM Based XSS
+   JS client side writes user control data to DOM without proper sanitization
