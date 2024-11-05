@@ -1,0 +1,15 @@
+TODO. 加密算法三种类型
+Hashing Encryption 哈希加密
+- SHA-1
+- MD5(存在安全问题)
+  - Collision vulnerabilities 不同的Input可能加密出来相同的Hash
+  - Rainbow Tables 测试大量的原始Input是否能够生成指定的Hash
+
+Symmetric Encryption 对称加密
+- AES128
+- AES256
+- DES(已被破解)
+
+Asymmetric Encryption 非对称加密
+- RSA
+- DH
