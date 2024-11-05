@@ -1,0 +1,40 @@
+Http Response Status Code:
+1. 2xx: server 收到 client 端请求，可以执行
+2. 4xx: client 送來资料有错，server 端无法执行 (client 修正错误后，可再送一次请求)
+3. 5xx: client 送來的资料没错，但 server 端出错无法执行(client 端无法 take 任何 action)
+
+状态码分类
+ 1XX - 信息型，服务器收到请求，需要请求者继续操作
+ 2XX - 成功型，请求成功收到，理解并处理 ==> 不同的状态码，对应的处理结果不同
+ 3XX - 重定向，需要进一步的操作以完成请求
+ 4XX - 客户端错误，请求包含语法错误或无法完成请求
+ 5XX - 服务器错误，服务器在处理请求的过程中发生了错误
+
+常见状态码
+ 200 - OK 客户端请求成功
+ 301 - 永久重定向: 资源(网页等)永久转移到其它URL
+ 302 - 临时重定向: 可以用来统计网址被点击的次数，收集用户Cookie, User Agent等信息做大数据分析
+ 400 - Bad Request 客户端请求有语法错误，不能被服务器所理解
+ 401 - Unauthorized 请求未经授权(考虑WWW-Authenticate报头域)
+ 403 - Forbidden 服务端禁止访问，不执行授权和重定向(通常是用户没有Role或者没有被授权)
+ 404 - 请求资源不存在，可能是输入了错误的URL
+ 500 - 服务器内部发生了不可预期的错误
+ 503 - Server Unavailable 可能被异常关闭导致不能处理请求
+
+2XX(Success 成功状态码)
+  200 - OK 请求成功
+  201 - Created 文档创建成功,比如新增一个user成功
+  202 - Accepted 请求已被接受，但相应的操作可能尚未完成
+
+4XX(Client Error 客户端错误状态码)
+  400 - Bad Request 请求参数有误, 请求无法被服务器理解, 修改后可以重新提交这个请求
+  401 - Unauthorized 当前请求用户未被授权, 比如Auth未登陆
+  403 - Forbidden 当前请求被拒绝, 比如访问Role权限有问题或进行越权操作
+  404 - Not Found 无法找到请求资源
+  405 - Method Not Allowed 使用无效的HTTP请求类型对请求的URL进行了请求
+  406 - Not Acceptable 服务器不支持请求的content type
+  413 - Request Entity Too Large 请求体太大不支持, 一般是上传的文件超出了限定导致的
+
+5XX(Server Error 服务器错误状态码)
+  500 - Internal Server Error 服务端在执行请求时错误或服务器bug
+  503 - Service Unavailable 服务不可用，现在无法处理请求
