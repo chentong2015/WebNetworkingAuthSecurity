@@ -1,0 +1,6 @@
+TODO. 序列化和反序列化本身没有问题
+只有当序列化处理的是User Input数据(非安全数据)时才造成安全问题
+
+1. Do Not Deserialize User Input
+2. 考虑使用跨平台的结构化数据表示JSON，protobuf
+3. 是使用DTO Object
