@@ -1,4 +1,4 @@
-Authentication Forms Broken 提交表单可能存在的安全问题
+Authentication Forms Broken:
 1. User Enumeration
    表单在提交时不应该显示用户的Email是否正确或是否存在
    - 一旦User Account被测试找出，可以通过暴力破解密码来盗取账户
