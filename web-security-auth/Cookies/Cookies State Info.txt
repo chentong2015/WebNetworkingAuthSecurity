@@ -1,5 +1,4 @@
-Cookies:
-- 浏览器端缓存的State Info状态信息
-- Cookies中通常包含用户session的回话信息
-- 在发送请求时，浏览器会自动将cookie信息添加到HTTP请求中
-  Cookies are automatically included in the HTTP request by the browser.
+Cookies: 浏览器端缓存的State Info状态信息
+1. Cookies中通常包含用户session的回话信息
+2. 在发送请求时，浏览器会自动将cookie信息添加到HTTP请求中
+   Cookies are automatically included in the HTTP request by the browser.
