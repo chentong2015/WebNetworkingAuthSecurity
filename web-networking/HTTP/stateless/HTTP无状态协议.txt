@@ -1,13 +1,11 @@
-如何理解Http是一个无状态协议:
-Http请求是相对独立的，且服务端在默认情况下不会保存请求的信息
-
-Stateless protocol：
+Stateless protocol：Http是一个无状态协议
 1. Each http request is executed independently,
 2. HTTP request/response pairs are independent of each other
 3. Server side is not required to track state over multiple requests,
    Server doesn't retain info or status about each user for the duration of multiple requests.
 
-通过如下方式来保留请求的状态信息(Stateful):
+Http请求是相对独立，服务端在默认情况下不会保存请求信息
+但是可以通过如下方式来保留请求的状态信息(Stateful)
 Http Cookies,
 Sessions,
 HTTP Authentication,
