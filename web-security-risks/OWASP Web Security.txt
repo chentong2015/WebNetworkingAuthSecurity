@@ -4,5 +4,3 @@ https://owasp.org/www-project-top-ten/
 
 WSTG: Web Security Testing Guide
 https://owasp.org/www-project-web-security-testing-guide/
-
-Wizer Security Training: 2016+TCHong123&
