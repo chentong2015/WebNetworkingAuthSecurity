@@ -1,6 +1,6 @@
-TODO. 加密算法三种类型
 Hashing Encryption 哈希加密
 - SHA-1
+  - SHA-1 Checksum 算法用于生成Maven Repo jar包校验值
 - MD5(存在安全问题)
   - Collision vulnerabilities 不同的Input可能加密出来相同的Hash
   - Rainbow Tables 测试大量的原始Input是否能够生成指定的Hash
