@@ -1,0 +1,19 @@
+TODO. 客户端如何获取服务端数据更新 ?
+Client Pull
+- Client periodically requests a server for updates
+- Short polling: 发送请求，server端返回指定的response之后，确定关闭
+- Long polling: 发送请求，在等到更新之前不关闭连接，如果在timeout时间内没有更新，发送特殊的Response
+  The long polling request can timeout or can receive a disconnect from the server,
+  in that case, the client has to open a new request.
+
+Server Push:
+A server proactively sends messages to clients immediately after they are available
+- Server-Sent Events:
+  Send text messages only from a server to clients in browser-based web
+- WebSocket:
+  Simultaneous, bi-directional, real-time communication in web app
+  based on a protocol other than HTTP(proxy servers, NATs, firewalls, etc)
+  Allow both the server and the client to push messages at any time
+  without any relation to a previous request.
+
+https://en.wikipedia.org/wiki/Push_technology
