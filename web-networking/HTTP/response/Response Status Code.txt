@@ -22,19 +22,19 @@ Http Response Status Code:
  503 - Server Unavailable 可能被异常关闭导致不能处理请求
 
 2XX(Success 成功状态码)
-  200 - OK 请求成功
-  201 - Created 文档创建成功,比如新增一个user成功
-  202 - Accepted 请求已被接受，但相应的操作可能尚未完成
+ 200 - OK 请求成功
+ 201 - Created 文档创建成功,比如新增一个user成功
+ 202 - Accepted 请求已被接受，但相应的操作可能尚未完成
 
 4XX(Client Error 客户端错误状态码)
-  400 - Bad Request 请求参数有误, 请求无法被服务器理解, 修改后可以重新提交这个请求
-  401 - Unauthorized 当前请求用户未被授权, 比如Auth未登陆
-  403 - Forbidden 当前请求被拒绝, 比如访问Role权限有问题或进行越权操作
-  404 - Not Found 无法找到请求资源
-  405 - Method Not Allowed 使用无效的HTTP请求类型对请求的URL进行了请求
-  406 - Not Acceptable 服务器不支持请求的content type
-  413 - Request Entity Too Large 请求体太大不支持, 一般是上传的文件超出了限定导致的
+ 400 - Bad Request 请求参数有误, 请求无法被服务器理解, 修改后可以重新提交这个请求
+ 401 - Unauthorized 当前请求用户未被授权, 比如Auth未登陆
+ 403 - Forbidden 当前请求被拒绝, 比如访问Role权限有问题或进行越权操作
+ 404 - Not Found 无法找到请求资源
+ 405 - Method Not Allowed 使用无效的HTTP请求类型对请求的URL进行了请求
+ 406 - Not Acceptable 服务器不支持请求的content type
+ 413 - Request Entity Too Large 请求体太大不支持, 一般是上传的文件超出了限定导致的
 
 5XX(Server Error 服务器错误状态码)
-  500 - Internal Server Error 服务端在执行请求时错误或服务器bug
-  503 - Service Unavailable 服务不可用，现在无法处理请求
+ 500 - Internal Server Error 服务端在执行请求时错误或服务器bug
+ 503 - Service Unavailable 服务不可用，现在无法处理请求
