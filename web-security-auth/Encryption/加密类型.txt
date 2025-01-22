@@ -1,4 +1,5 @@
-Hashing Encryption 哈希加密
+TODO. Hashing Encryption
+哈希加密
 - SHA-1
   - 用于生成Maven Repo Checksum包校验值
 - SHA-256
@@ -7,11 +8,13 @@ Hashing Encryption 哈希加密
   - Collision vulnerabilities 不同的Input可能加密出来相同的Hash
   - Rainbow Tables 测试大量的原始Input是否能够生成指定的Hash
 
-Symmetric Encryption 对称加密
+TODO. Symmetric Encryption
+对称加密 => 适用于密码验证
 - AES128
 - AES256
 - DES(已被破解)
 
-Asymmetric Encryption 非对称加密
+TODO. Asymmetric Encryption 非对称加密
+=> 包含键值对，加密解密相对耗时
 - RSA
 - DH
