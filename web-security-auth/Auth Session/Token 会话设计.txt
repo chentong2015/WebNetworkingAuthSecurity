@@ -1,0 +1,11 @@
+TODO. Cookies信息
+- Cookies是浏览器端缓存的State Info状态信息
+- Cookies中通常包含用户session的回话信息
+- 在发送请求时，浏览器会自动将cookie信息添加到HTTP请求中
+
+TODO. Token验证流程: 保证用户在登录后的有效时间内自动认证
+用户在前端登录成功后，后端生成Session Token并添加到返回的Response中
+1. 存储Token信息到浏览器Cookie中
+2. 如果用户在Token过期之前有活动，则刷新过期时间
+3. 如果用户在Token过期前没有活动，则自动失效，用户需要重新登录
+4. 如果用户主动选择登出，则清除Token，用户需要重新登录
