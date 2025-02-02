@@ -10,6 +10,6 @@ TODO. Symmetric Encryption => 适用于密码验证
 - AES256
 - DES(已被破解)
 
-TODO. Asymmetric Encryption => 键值对，加密解密相对耗时
-- RSA
+TODO. Asymmetric Encryption => 非对称加密解密相对耗时
+- RSA(RSAPublicKey, RSAPrivateKey 键值对)
 - DH
