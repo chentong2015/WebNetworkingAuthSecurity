@@ -1,0 +1,37 @@
+TODO. HttpServlet Request
+HTTP Method = GET
+Request URI = /user
+Parameters = {}
+Headers = []
+Body = null
+Handler:
+    Type = org.example.controller.UserController
+    Method = org.example.controller.UserController#user(HttpServletRequest)
+Async:
+    Async started = false
+    Async result = null
+Resolved Exception:
+    Type = null
+ModelAndView:
+    View name = null
+    View = null
+    Model = null
+FlashMap:
+    Attributes = null
+
+TODO. HttpServlet Response
+Status = 200
+Error message = null
+Headers = [
+  Content-Type:"application/json",
+  Content-Length:"14",
+  X-Content-Type-Options:"nosniff", X-XSS-Protection:"0",
+  Cache-Control:"no-cache, no-store, max-age=0, must-revalidate",
+  Pragma:"no-cache",
+  Expires:"0",
+  X-Frame-Options:"DENY"]
+Content type = application/json
+Body = User Home page
+Forwarded URL = null
+Redirected URL = null
+Cookies = []
