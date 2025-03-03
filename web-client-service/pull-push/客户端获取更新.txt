@@ -9,6 +9,8 @@ Long polling:
  发送请求，在等到更新之前不关闭连接，如果在timeout时间内没有更新，发送特殊的Response
  The long polling request can timeout or can receive a disconnect from the server,
  in that case, the client has to open a new request.
+ The server does not respond immediately.
+ Instead, the server waits until something changes, then responds with the update
 
 TODO. Server Push
 Server-Sent Events:
