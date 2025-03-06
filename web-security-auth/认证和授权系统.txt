@@ -4,3 +4,29 @@ Authentication认证: 401 UNAUTHORIZED
 Authorization 授权: 403 FORBIDDEN
 对系统访问者的行为进行控制，对系统隐私数据进行保护，为特定的接口添加访问权限
 The request was a legal request, but the server is refusing to respond to it.
+
+
+TODO. Identity Exposure 认证相关的技术
+In-depth understanding of any of the following:
+  Identity Security,
+  IAM (Identity and Access Management),
+  ITDR (Identity Threat Detection & Response),
+  ISPM (Prevention/Identity Security Posture Management).
+
+Familiarity with technologies:
+  SSO (Single Sign-On),
+  Identity Governance,
+  Active Directory,
+  Entra ID,
+  IDPs,
+  MFA
+
+Knowledge of security protocols:
+  OAuth,
+  SAML,
+  OpenID Connect
+
+Experience working with
+  Endpoint Security,
+  Zero Trust Architecture,
+  Privileged Access Management (PAM)
