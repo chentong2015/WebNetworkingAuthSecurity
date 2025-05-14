@@ -1,15 +1,19 @@
-TODO. Hashing Encryption => 单向加密用于密码验证
+Hashing Encryption => 单向加密用于密码验证
 - SHA-1: 生成Maven Repo Checksum包校验值
 - SHA-256: 生成项目记录的Checksum验校值
 - MD5(存在安全问题)
   - Collision vulnerabilities 不同的Input可能加密出来相同的Hash
   - Rainbow Tables 测试大量的原始Input是否能够生成指定的Hash
 
-TODO. Symmetric Encryption => 适用于密码验证
+Symmetric Encryption => 适用于密码验证
 - AES128
 - AES256
 - DES(已被破解)
 
-TODO. Asymmetric Encryption => 非对称加密解密相对耗时
+Asymmetric Encryption => 非对称加密解密相对耗时
 - RSA(RSAPublicKey, RSAPrivateKey 键值对)
 - DH
+
+TODO. Cryptography 密码学(强算法相关)
+Code Obfuscation 代码混淆, 一种加密的算法技术
+https://digital.ai/glossary/what-is-code-obfuscation/
