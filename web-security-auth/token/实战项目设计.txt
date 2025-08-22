@@ -1,0 +1,2 @@
+TODO. Token实战项目设计
+1. Token都需要设置过期时间，即使是长期有效的静态token
