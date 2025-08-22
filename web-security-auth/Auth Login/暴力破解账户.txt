@@ -1,10 +1,8 @@
-Authentication Forms Broken:
+TODO. Forms Broken 账户破解问题
 1. User Enumeration
    表单在提交时不应该显示用户的Email是否正确或是否存在
    - 一旦User Account被测试找出，可以通过暴力破解密码来盗取账户
    - 一旦User Account被测试找出，可能会收到phishing attacks
    - 某些网站不应该提供Email是否存在的信息(比如投票网站, 找工作网站)
-2. Password Requirements
-   用户的密码必须严格满足特定的Policy
-3. Brute Forcing Possible
-   不能为攻击者提供保留破解的可能
+2. Password Requirements 用户的密码必须严格满足特定的Policy
+3. Brute Forcing Possible不能为攻击者提供保留破解的可能
