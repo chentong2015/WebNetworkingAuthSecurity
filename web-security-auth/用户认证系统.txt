@@ -1,0 +1,24 @@
+Authentication认证:
+401 UNAUTHORIZED 对系统访问者身份确认，用户密码登录，二维码登录，刷脸登录...
+
+Authorization 授权:
+403 FORBIDDEN 对系统行为进行控制，对系统隐私数据进行保护，为特定的接口添加访问权限
+The request was a legal request, but the server is refusing to respond to it.
+
+TODO. 用户隔离策略
+不同类型的用户属于不同的APP, 使用系统中的不同服务
+APP1的用户创建不应该了解APP2用户创建的一些属性配置
+APP1上不同类型用户(SAML,LOCAL)的属性设置也应该隔离
+
+TODO. Identity Exposure 认证相关的技术
+Identity Security,
+IAM (Identity and Access Management),
+ITDR (Identity Threat Detection & Response),
+ISPM (Prevention/Identity Security Posture Management).
+
+Security technologies:
+SSO (Single Sign-On), Identity Governance, Active Directory, Entra ID, IDPs, MFA
+Endpoint Security, Zero Trust Architecture, Privileged Access Management (PAM)
+
+Security protocols:
+OAuth, SAML, OpenID Connect
