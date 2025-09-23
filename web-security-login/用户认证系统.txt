@@ -1,4 +1,4 @@
-TODO. 约束用户行为的是它的角色授权(Rule, Permission)
+TODO. 约束用户行为的是它的角色授权(Role, Permission)
 Authentication认证: 401 UNAUTHORIZED 对系统访问者身份确认，用户密码登录，二维码登录，刷脸登录...
 Authorization授权: 403 FORBIDDEN 对系统行为进行控制，保护系统隐私数据，为特定接口添加访问权限
 
