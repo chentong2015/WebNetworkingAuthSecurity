@@ -1,0 +1,14 @@
+http://localhost:8080/v1/path/
+1. 请求的url路径中应该携带什么变量或参数 ?
+   @PathVariable @RequestParam 路径中包含的数据应该仅用于定位资源，包括状态或来源
+
+2. 请求的RequestBody中应该包含什么数据 ?
+   请求的Header中包含相关参数(数据类型, 认证的Cookie)等
+
+3. 为什么使用ResponseEntity<?>作为返回类型 ?
+   @ResponseBody 会将请求返回的数据处理成纯文本数据
+   ResponseEntity<Object> 会将返回数据自动解析成Json格式的数据
+
+4. 为什么不推荐创建两个完全类似的Endpoints ?
+   v1/api/oauth2/token 无法保证API的使用场景和调用行为
+   v1/api/oauth2/token-duplicate 增加用户端的使用复杂度，后期难以维护

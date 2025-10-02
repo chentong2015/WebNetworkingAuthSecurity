@@ -1,11 +1,11 @@
 TODO. REST: REPresentational State Transfer
+ 一套API的架构和规则/标准, 用于定义资源的映射
 REST is set of rules, the common standard for building web API
 REST API defines resources which can map to system resources
 URIs should only be used to identify the resources and not any action upon them uniquely
 
-RESTFull API follows the REST standards: GET / POST / PUT / DELETE
-
-TODO. REST API设计规范  https://restfulapi.net/resource-naming/
+TODO. REST API 设计规范
+https://restfulapi.net/resource-naming/
 1. Stateless Communication
    - Client and Server don't need to store any information of each other
    - Every request/response is independent of all others
@@ -19,9 +19,5 @@ TODO. REST API设计规范  https://restfulapi.net/resource-naming/
    - Request url can't contain sensitive information
    - Request body will contain large object/json
 
-TODO. Spring Boot REST API 设计规范
-1. 请求的类型 @RequestMapping @GetMapping
-2. 认证和授权 @PreAuthorize
-3. 请求的参数 @PathVariable @RequestParam @RequestBody
-4. 异常的处理 @ControllerAdvice(全局处理) @ExceptionHandler(局部方法)
-5. 返回的数据 ResponseEntity<Object> 携带Response Codes
+TODO. RESTFull API 标准请求
+RESTFull API follows the REST standards: GET / POST / PUT / DELETE
