@@ -1,0 +1,6 @@
+TODO. WebSocket: 双端实时通讯
+Simultaneous, bi-directional, real-time communication in web app
+based on a protocol other than HTTP (proxy servers, NATs, firewalls, etc)
+
+Allow both the server and the client to push messages at any time
+without any relation to a previous request.

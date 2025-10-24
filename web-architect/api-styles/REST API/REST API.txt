@@ -1,0 +1,18 @@
+TODO. REST: REPresentational State Transfer 定义资源映射的API架构和标准
+REST is set of rules, the common standard for building web API
+REST API defines resources which can map to system resources
+URIs should only be used to identify the resources and not any action upon them uniquely
+
+TODO. REST API 核心特征: URL链接(及其参数)本质是用于定位资源
+1. Versioning of API
+   - Support Backwards compatibility and migration
+2. Stateless Communication
+   - Client and Server don't need to store any information of each other
+   - Every request/response is independent of all others
+3. Resource is Noun, not verb
+   - Url parameter is for locating Resource
+   - Request url can't contain sensitive information
+   - Request body will contain large object/json
+
+RESTFul API Standards: GET / POST / PUT / DELETE
+https://restfulapi.net/resource-naming/
