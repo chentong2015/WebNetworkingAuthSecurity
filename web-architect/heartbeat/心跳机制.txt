@@ -1,0 +1,10 @@
+Heartbeat心跳机制: 防止客户端和服务端连接的timeout
+
+TODO. 前端实现
+前端周期性发送请求以维持Session在线的状态, 超时自动Lock
+
+TODO. 后端实现: SSE, Zookeeper / Netty (发送Socket)
+服务端(在周期时间内)向客户端发送心跳来维持连接, 维持服务端数据的时间
+1. 什么时候开始和关闭心跳 ?  客户端发送请求获取耗时数据并等待返回结果
+2. 网络中断造成心跳机制结束 ？可能造成client端重新进入timeout问题
+3. 服务端在什么时间内发送回复 ？ Client端定义timeout时间并"动态"发送给Server(选择time*80%计算心跳)
