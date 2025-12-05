@@ -3,7 +3,7 @@ REST is set of rules, the common standard for building web API
 REST API defines resources which can map to system resources
 URIs should only be used to identify the resources and not any action upon them uniquely
 
-TODO. REST API 核心特征: URL链接(及其参数)本质是用于定位资源
+TODO. REST API(URL链接及其参数)本质是用于定位资源, 通常使用名词
 1. Versioning of API
    - Support Backwards compatibility and migration
 2. Stateless Communication
