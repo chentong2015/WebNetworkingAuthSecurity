@@ -1,0 +1,9 @@
+设计web前后端性能测试和优化项目
+- 降低DTO传递的数据量, 排除JSON无用字段
+- 使用Pageable分页返回少量数据
+- 使用StreamingResponseBody流式数据返回(数据量极大时)?
+- 启用GZIP压缩, 降低传递的JSON数据量(Content-Encoding: gzip)?
+
+实战场景:
+1. Web前端获取大量数据需要加载到页面上
+2. Web前端页面向后端发送耗时请求,导致页面卡顿并响应缓慢
