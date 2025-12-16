@@ -7,6 +7,7 @@ TODO. 用户隔离策略
 - APP1的用户创建不应该了解APP2用户创建的一些属性配置
 - APP1上不同类型用户(SAML,LOCAL)的属性设置也应该隔离
 
+
 TODO. Identity Exposure 认证相关的技术
 Identity Security,
 IAM (Identity and Access Management),

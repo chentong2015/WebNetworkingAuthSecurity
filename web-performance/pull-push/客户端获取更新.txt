@@ -1,16 +1,15 @@
 TODO. Client Pull
-Short polling:
+1. Short polling:
 Client periodically requests a server for updates
 发送请求，server端返回指定的response之后，确定关闭
 
-Long polling:
+2. Long polling:
 The long polling request can timeout or can receive a disconnect from the server,
 in that case, the client has to open a new request.
 Server does not respond immediately. It waits until something changes, then responds update.
 发送请求，在等到更新之前不关闭连接，如果在timeout时间内没有更新，发送特殊的Response
 
-TODO. Server Push:
-Server-Sent Events:
+TODO. Server Push: Server-Sent Event (SSE)
 A server proactively sends messages to clients immediately after they are available
 Send text messages only from a server to clients in browser-based web.
 

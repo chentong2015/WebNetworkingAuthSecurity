@@ -1,6 +1,8 @@
-设计web前后端性能测试和优化项目
+TODO. Web Perf 项目设计
 - 降低DTO传递的数据量, 排除JSON无用字段
-- 使用Pageable分页返回少量数据
+- 后端使用Async异步线程处理请求
+- 后端使用Pageable分页返回数据
+- PULL PUSH技术, 后端异步推送(MQ, SSE)
 - 使用StreamingResponseBody流式数据返回(数据量极大时)?
 - 启用GZIP压缩, 降低传递的JSON数据量(Content-Encoding: gzip)?
 
