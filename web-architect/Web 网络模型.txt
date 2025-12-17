@@ -1,4 +1,0 @@
-Client Server 模型
-1. 发送的请求造成timeout如何处理 ?  .timeout(Duration.ofMinutes(3))
-2. 连接失败是否有retry自动重新连接 ? feign.Retryer
-3. 耗时请求如何避免出现阻塞 ? httpAsyncClient.execute(post, FutureCallback());

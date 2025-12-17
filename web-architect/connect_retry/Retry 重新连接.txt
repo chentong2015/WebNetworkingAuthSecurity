@@ -1,0 +1,6 @@
+后端API无法连接时必须考虑重新连接:
+feign.Retryer / angular.pipe(retry(2)) 设置重连次数
+Periodic attempts 周期性尝试
+
+支持网络中断后的重连和继续传输:
+INTERNET_RECONNECTED 检测网络恢复并自动重连

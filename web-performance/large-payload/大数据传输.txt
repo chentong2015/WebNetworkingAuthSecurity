@@ -1,0 +1,7 @@
+TODO. 如何处理Large-Payload大数据的交换传输 ?
+Make large payload exchange between HTTP services more efficient
+Allow a client to receive messages about asynchronous updates from a server
+
+1. Pageable & Chunk 数据分页分块传输
+2. Message Queue 消息订阅, 使用消息中间件来解耦
+3. Reactive 相应式编程, 订阅Event事件, 服务端持续异步推送数据
