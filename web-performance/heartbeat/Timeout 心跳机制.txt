@@ -1,0 +1,9 @@
+TODO. Heartbeat防止客户端和服务端的连接超时timeout问题
+前端周期性发送请求以维持Session状态, 避免超时Lock锁定
+服务端周期性(timeout*80%动态周期)向客户端发送Socket心跳维持连接
+
+1. 什么时候开始和关闭心跳 ?  客户端发送请求获取耗时数据并等待返回结果
+2. 网络中断造成心跳机制结束 ？ 造成client端重新进入timeout问题
+3. 服务端在什么时间内发送回复 ？Client端定义timeout时间并"动态"发送给Server
+
+SSE, Zookeeper, Java IO, Netty (发送Socket)
