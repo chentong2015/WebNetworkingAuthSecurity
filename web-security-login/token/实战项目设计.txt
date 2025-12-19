@@ -1,2 +1,7 @@
-TODO. Token实战项目设计
+TODO. Token实战运用
 1. Token都需要设置过期时间，即使是长期有效的静态token
+2. Token令牌中包含用户名等信息，可用于过滤和负载映射
+
+TODO. Base64 decode 解码Token数据
+www.base64decode.org 将token解码，查看token中包含的相关属性和特征信息UseCase
+eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJjaGVuIiwiaXNzIjoiVE9LRU4gUHJvdmlkZXIiLCJpYXQiOjE3MzE5MjI1OTQsImV4cCI6MTczMTkyMjg5NH0.IuEbKJz7GWFpGRCPiyeDOK-k5Zp1if7me9sYw6H463cwMkiRfsR0udhmz2h5zJbY
