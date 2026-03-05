@@ -4,7 +4,7 @@ import javax.crypto.*;
 import javax.crypto.spec.IvParameterSpec;
 import java.nio.charset.StandardCharsets;
 
-public class AesEncryption extends AES {
+public class AesEncryption extends Aes_cbc {
 
     // 对称加密: 支持加密字母和数字以外的字符
     public static void main(String[] args) {

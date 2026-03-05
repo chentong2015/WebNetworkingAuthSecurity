@@ -6,7 +6,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 import java.util.Base64;
 
-public abstract class AES {
+public abstract class Aes_cbc {
 
     static final int KEY_LENGTH = 128;
     static final String ALGORITHM = "AES";
@@ -16,7 +16,7 @@ public abstract class AES {
     static final String USER_PASSWORD_IV = "CEEA74A4915C47FA619E50C7D2255464";
 
     SecretKey toSecretKey() {
-        byte[] secretKeyBytes = hexToBytes(AES.USER_PASSWORD_SECRET_KEY);
+        byte[] secretKeyBytes = hexToBytes(Aes_cbc.USER_PASSWORD_SECRET_KEY);
         return new SecretKeySpec(secretKeyBytes, ALGORITHM);
     }
 

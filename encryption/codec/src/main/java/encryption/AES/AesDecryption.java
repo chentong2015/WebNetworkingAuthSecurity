@@ -4,7 +4,7 @@ import javax.crypto.*;
 import javax.crypto.spec.IvParameterSpec;
 import java.nio.charset.StandardCharsets;
 
-public class AesDecryption extends AES {
+public class AesDecryption extends Aes_cbc {
 
     public static void main(String[] args) throws Exception {
         AesDecryption aesDecryption = new AesDecryption();

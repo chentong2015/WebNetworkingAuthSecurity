@@ -1,0 +1,4 @@
+TODO. AES不同模式安全模式不同
+AES/ECB/PKCS5Padding (Electronic Codebook) 不适合生产环境 -> 安全问题
+AES/CBC/PKCS5Padding (Cipher Block Chaining) 次优方案, 不自带完整性校验
+AES/GCM/NoPadding (Galois/Counter Mode) 现代标准, 推荐的对称加密方式
