@@ -1,0 +1,2 @@
+1. Always deny access by default
+2. Implement function access control on server side, never the client
