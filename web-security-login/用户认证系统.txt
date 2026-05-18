@@ -1,4 +1,7 @@
-TODO. 约束用户行为的是它的角色授权(Role, Permission)
+1. Always deny access by default
+2. Implement function access control on server side, never the client
+
+TODO. 约束用户行为的角色授权(Role, Permission)
 Authentication认证: 401 UNAUTHORIZED 对系统访问者身份确认，用户密码登录，二维码登录，刷脸登录...
 Authorization授权: 403 FORBIDDEN 对系统行为进行控制，保护系统隐私数据，为特定接口添加访问权限
 
@@ -7,9 +10,8 @@ TODO. 用户隔离策略
 - APP1的用户创建不应该了解APP2用户创建的一些属性配置
 - APP1上不同类型用户(SAML,LOCAL)的属性设置也应该隔离
 
-
-TODO. Identity Exposure 认证相关的技术
-Identity Security,
+TODO. Identity Exposure Tech:
+Identity Security:
 IAM (Identity and Access Management),
 ITDR (Identity Threat Detection & Response),
 ISPM (Prevention/Identity Security Posture Management).
@@ -18,4 +20,5 @@ Security technologies:
 SSO (Single Sign-On), Identity Governance, Active Directory, Entra ID, IDPs, MFA
 Endpoint Security, Zero Trust Architecture, Privileged Access Management (PAM)
 
-Security protocols: OAuth, SAML, OpenID Connect
+Security protocols:
+OAuth, SAML, OpenID Connect
