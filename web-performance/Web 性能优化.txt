@@ -1,4 +1,4 @@
-TODO. Web Perf 项目设计
+TODO. Web Performance 项目设计
 - 降低DTO传递的数据量(避免无用字段,避免全表查询)
 - 后端使用Async异步线程处理请求
 - 后端使用Pageable分页返回数据
