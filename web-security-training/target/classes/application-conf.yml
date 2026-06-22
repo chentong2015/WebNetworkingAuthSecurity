@@ -1,0 +1,48 @@
+# Configuration for Server with SSL
+server:
+  ssl:
+    protocol: TLS
+    enabled: true
+    key-store-type: PKCS12
+    key-store: ${SSL_KEY_STORE}
+    key-store-password: ${SSL_KEY_STORE_PWD}
+    key-alias: ${SSL_KEY_ALIAS}
+  port: 443
+  servlet:
+    session:
+      timeout: 15m
+      tracking-modes: cookie
+      cookie:
+        name: id
+        http-only: true
+        secure: true
+
+# Configuration for spring application
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  servlet:
+    multipart:
+      max-file-size: 8MB
+      max-request-size: 10MB
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 8
+
+login-attempts:
+  max-number-of-attempts: 5
+  failed-attempt:
+    block-time: 1
+    time-unit: DAYS
+  time-window:
+    time: 10
+    time-unit: MINUTES
+  email-message: We detected suspicious login attempts. Your account is blocked for 1 day from now.
+
+

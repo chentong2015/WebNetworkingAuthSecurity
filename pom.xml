@@ -11,6 +11,8 @@
 
     <modules>
         <module>web-security-training</module>
+        <module>web-security-https</module>
+        <module>web-security-risk-crsf</module>
     </modules>
 
     <properties>
