@@ -1,3 +1,5 @@
+package org.example;
+
 import javax.security.cert.CertificateException;
 import javax.security.cert.X509Certificate;
 import java.io.FileInputStream;
@@ -7,7 +9,7 @@ import java.util.Base64;
 // TODO. javax X509Certificate标记废弃同时将会被移除
 // @Deprecated(since="9", forRemoval=true)
 // Use the classes in java.security.cert instead
-public class JavaxCertificateDemo {
+public class Java8CertificateDemo {
 
     // 以下代码只能运行在JDK 8版本上
     public static void mainTest(String[] args) throws Exception {

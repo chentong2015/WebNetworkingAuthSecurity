@@ -1,22 +1,3 @@
-# Configuration for Server with SSL
-server:
-  ssl:
-    protocol: TLS
-    enabled: true
-    key-store-type: PKCS12
-    key-store: ${SSL_KEY_STORE}
-    key-store-password: ${SSL_KEY_STORE_PWD}
-    key-alias: ${SSL_KEY_ALIAS}
-  port: 443
-  servlet:
-    session:
-      timeout: 15m
-      tracking-modes: cookie
-      cookie:
-        name: id
-        http-only: true
-        secure: true
-
 # Configuration for spring application
 spring:
   mvc:
@@ -35,6 +16,7 @@ spring:
       connection-timeout: 20000
       maximum-pool-size: 8
 
+# Set max number of retry times for login
 login-attempts:
   max-number-of-attempts: 5
   failed-attempt:

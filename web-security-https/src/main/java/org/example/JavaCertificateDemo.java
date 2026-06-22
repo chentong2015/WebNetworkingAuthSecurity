@@ -1,3 +1,5 @@
+package org.example;
+
 import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -21,9 +23,9 @@ public class JavaCertificateDemo {
         }
     }
 
+    // 提供的certificate的文件必须是有效的签名文件
     public static void mainTest(String[] args) throws Exception {
-        // 提供的certificate的文件必须是有效的签名文件
-        InputStream inputStream2 = new FileInputStream("fullpath\\sample.crt");
+        InputStream inputStream2 = new FileInputStream("fullpath\\sampleCertificate.crt");
         CertificateFactory factory = CertificateFactory.getInstance("X.509");
         X509Certificate signingCert = (X509Certificate) factory.generateCertificate(inputStream2);
         System.out.println(signingCert.toString());
