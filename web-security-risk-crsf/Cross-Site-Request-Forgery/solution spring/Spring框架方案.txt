@@ -1,0 +1,8 @@
+TODO. Spring Security 采用添加Token的方式来防止CRSF攻击
+When Spring Security on classpath，it requires a valid CSRF token be sent with every request
+
+设置取消保护限制
+- http.csrf().disable()
+- http.csrf().ignoringAntMatchers("/test/**");
+
+https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html
