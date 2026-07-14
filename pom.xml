@@ -13,6 +13,7 @@
         <module>web-security-training</module>
         <module>web-security-https</module>
         <module>web-security-risk-crsf</module>
+        <module>web-security-risk-cors</module>
     </modules>
 
     <properties>
