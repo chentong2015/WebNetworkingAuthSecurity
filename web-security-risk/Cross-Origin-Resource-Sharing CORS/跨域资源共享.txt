@@ -1,0 +1,11 @@
+Cross-Origin-Resource-Sharing
+浏览器特有的安全保护机制，限制不同域的资源共享，保护隐私
+
+同源策略要求:
+- 协议: http和https不同
+- 域名: example.com和test.com不同
+- 端口: 80和8080不同
+
+No ’Access-Control-Allow-Origin‘ header is present
+- 当违法同源策略时出现跨域报错
+- 跨域报错只发生在浏览器上，后端可以自由请求不同源数据
