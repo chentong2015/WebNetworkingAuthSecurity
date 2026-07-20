@@ -6,19 +6,7 @@ Authentication认证: 401 UNAUTHORIZED 对系统访问者身份确认，用户�
 Authorization授权: 403 FORBIDDEN 对系统行为进行控制，保护系统隐私数据，为特定接口添加访问权限
 
 TODO. 用户隔离策略
-不同类型的用户属于不同的APP, 使用系统中的不同服务
-- APP1的用户创建不应该了解APP2用户创建的一些属性配置
-- APP1上不同类型用户(SAML,LOCAL)的属性设置也应该隔离
-
-TODO. Identity Exposure Tech:
-Identity Security:
-IAM (Identity and Access Management),
-ITDR (Identity Threat Detection & Response),
-ISPM (Prevention/Identity Security Posture Management).
-
-Security technologies:
-SSO (Single Sign-On), Identity Governance, Active Directory, Entra ID, IDPs, MFA
-Endpoint Security, Zero Trust Architecture, Privileged Access Management (PAM)
-
-Security protocols:
-OAuth, SAML, OpenID Connect
+- 某个用户只能访问和设置属于它自己的资源 !!
+- 不同类型的用户属于不同的APP, 使用系统中的不同服务
+- AppA的用户创建不应该了解AppB用户创建的一些属性配置
+- AppA上不同类型用户(SAML,LOCAL)属性设置也应该隔离

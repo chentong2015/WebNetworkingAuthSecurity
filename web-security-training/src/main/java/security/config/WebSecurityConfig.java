@@ -1,4 +1,4 @@
-package security;
+package security.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,22 +18,9 @@ import org.springframework.security.web.SecurityFilterChain;
 public class WebSecurityConfig {
 
     // TODO. 标准路径的配置数组
-    final String[] pageRegister = {
-            "/registration**",
-            "/login**",
-            "/reset-password**",
-            "/forgot-password**"};
-
-    final String[] adminPages = {
-            "/admin/**"
-    };
-
-    final String[] ignoreList = {
-            "/css/**",
-            "/fonts/**",
-            "/libs/**",
-            "/webjars/**"
-    };
+    final String[] pageRegister = {"/registration**", "/login**", "/reset-password**", "/forgot-password**"};
+    final String[] adminPages = {"/admin/**"};
+    final String[] ignoreList = {"/css/**", "/fonts/**", "/libs/**", "/webjars/**"};
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) {
@@ -56,9 +43,7 @@ public class WebSecurityConfig {
                     requests.requestMatchers("/**").hasRole("ADMIN");
 
                     // 应该限制Swagger Page的访问，避免敏感的API Endpoints泄露
-                    requests.requestMatchers("/swagger-ui/**",
-                            "/v2/api-docs/**",
-                            "/swagger-resources/**").hasRole("ADMIN");
+                    requests.requestMatchers("/swagger-ui/**", "/v2/api-docs/**", "/swagger-resources/**").hasRole("ADMIN");
 
                     // 始终控制任何路径的安全授权
                     requests.anyRequest().authenticated();

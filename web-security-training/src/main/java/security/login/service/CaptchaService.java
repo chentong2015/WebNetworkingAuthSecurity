@@ -1,6 +1,6 @@
 package security.login.service;
 
-// TODO. 设计Captcha验证码逻辑:
+// TODO. 设计Captcha验证码逻辑: 有效反自动化刷(Anti-Automation)
 // - 数据库中维护一张有效的字符或图形验证码表，动态更新 + 加密存储 ?
 // - 用户提交时验证是否有效，是否存在表中
 // - 用户选择刷新时自动获取下一个有效码，提供给用户
