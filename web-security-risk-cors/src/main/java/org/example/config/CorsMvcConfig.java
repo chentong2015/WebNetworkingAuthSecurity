@@ -1,13 +1,13 @@
-package org.example;
+package org.example.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+// TODO. 纯WebMvc配置器来允许特定的请求源(不依赖spring-security)
 @Configuration
-public class CorsConfig3 implements WebMvcConfigurer {
+public class CorsMvcConfig implements WebMvcConfigurer {
 
-    // TODO. 使用WebMvc配置器来允许特定的请求源(不依赖spring-security)
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")

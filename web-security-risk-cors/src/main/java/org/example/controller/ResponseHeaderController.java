@@ -1,4 +1,4 @@
-package org.example;
+package org.example.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class CorsController2 {
+public class ResponseHeaderController {
 
     // TODO. 后端配置CORS响应头，允许特定源访问
     @GetMapping("/value")
