@@ -1,4 +1,4 @@
-package login_demo.model;
+package security.login.model;
 
 // @Entity
 public class LoginAttemptEntity {

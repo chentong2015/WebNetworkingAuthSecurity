@@ -1,4 +1,4 @@
-package login_demo.jwt;
+package security.login.jwt;
 
 import lombok.Builder;
 

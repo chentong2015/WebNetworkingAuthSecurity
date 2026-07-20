@@ -1,4 +1,4 @@
-package login_demo.service;
+package security.login.service;
 
 // TODO. 设计Captcha验证码逻辑:
 // - 数据库中维护一张有效的字符或图形验证码表，动态更新 + 加密存储 ?

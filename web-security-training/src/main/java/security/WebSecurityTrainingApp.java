@@ -1,4 +1,4 @@
-package security_control;
+package security;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

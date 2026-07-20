@@ -1,8 +1,8 @@
-TODO. Server Side Request Forgery
 在Server端伪造一个在服务端内网有效的请求，通过执行获取非法数据
-用户端是否必须输入完成的URLs链接 ?
+用户端是否必须输入完整URLs链接 ?
 服务端是否必须指定动态的URL请求 ?
 
+常见解决方案:
 - Blacklisting: block URLs containing certain IPs or host name 阻止特定请求的访问
 - Whitelisting: enforce URLs to start with, end with or contains certain string
 - Whitelisting Plus: 从特定的URL Domain执行redirect可能会再次造成SSRF

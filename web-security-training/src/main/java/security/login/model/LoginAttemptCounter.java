@@ -1,4 +1,4 @@
-package login_demo.model;
+package security.login.model;
 
 import lombok.Builder;
 import lombok.Getter;
